@@ -1,0 +1,922 @@
+{
+  "meta": {
+    "description": "YMCA Website Services distribution packages for metrics analysis",
+    "generated": "2026-01-08",
+    "source": "yusaopeny/composer.json + yusaopeny-project/composer.json + dorgcli mm podarok"
+  },
+  "drupal_org_ymca_modules": [
+    "openy_digital_signage",
+    "openy_autocomplete_path",
+    "openy_activity_finder",
+    "openy_gated_content",
+    "openy_daxko2",
+    "openy_mappings",
+    "openy_socrates",
+    "openy_er",
+    "openy_carnation",
+    "openy_rose",
+    "openy_lily",
+    "openy_branch_selector",
+    "openy_addthis",
+    "openy_gtranslate",
+    "openy_marketing_wiki",
+    "openy_repeat",
+    "openy_prgf_session_table",
+    "openy_node_session",
+    "openy_pef_gxp_sync",
+    "program_search",
+    "lb_accordion",
+    "lb_cards",
+    "lb_carousel",
+    "lb_ping_pong",
+    "lb_table",
+    "lb_hero",
+    "lb_grid_cta",
+    "lb_modal",
+    "lb_statistics",
+    "lb_simple_menu",
+    "lb_promo",
+    "lb_webform",
+    "lb_branch_amenities_blocks",
+    "lb_branch_menu_blocks",
+    "lb_branch_hours_blocks",
+    "lb_branch_social_links_blocks",
+    "lb_related_events_blocks",
+    "lb_related_articles_blocks",
+    "lb_testimonial_blocks",
+    "lb_partners_blocks",
+    "lb_staff_members_blocks",
+    "lb_theme_switcher",
+    "ws_lb_tabs",
+    "ws_event",
+    "ws_code_block",
+    "ws_promotion",
+    "ws_colorway_canada",
+    "ws_small_y",
+    "ws_media_entity_document",
+    "y_branch",
+    "y_branch_menu",
+    "y_lb_article",
+    "y_donate",
+    "y_facility",
+    "y_camp",
+    "y_program",
+    "y_program_subcategory"
+  ],
+  "packages": [
+    {
+      "name": "ycloudyusa/yusaopeny",
+      "ymca": true,
+      "type": "drupal-profile",
+      "repo": "https://github.com/YCloudYUSA/yusaopeny",
+      "notes": "Main distribution profile"
+    },
+    {
+      "name": "ycloudyusa/y_lb",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://github.com/YCloudYUSA/y_lb",
+      "notes": "Layout Builder for YMCA WS"
+    },
+    {
+      "name": "ycloudyusa/y_lb_demo_content",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://github.com/YCloudYUSA/y_lb_demo_content",
+      "notes": "Demo content for Layout Builder"
+    },
+    {
+      "name": "ycloudyusa/yusaopeny_activity_finder",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://github.com/YCloudYUSA/yusaopeny_activity_finder",
+      "notes": "Activity Finder"
+    },
+    {
+      "name": "ycloudyusa/y_pef_schedule",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://github.com/YCloudYUSA/y_pef_schedule",
+      "notes": "Weekly schedule management"
+    },
+    {
+      "name": "ycloudyusa/useless_machines",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://github.com/YCloudYUSA/useless_machines",
+      "notes": "Self-disabling modules utility"
+    },
+    {
+      "name": "ycloudyusa/ws_outsiders",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://github.com/YCloudYUSA/ws_outsiders",
+      "notes": "Legacy/candidate for removal tracking"
+    },
+    {
+      "name": "drupal/openy_branch_selector",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://www.drupal.org/project/openy_branch_selector",
+      "notes": "Branch selection widget"
+    },
+    {
+      "name": "drupal/openy_carnation",
+      "ymca": true,
+      "type": "drupal-theme",
+      "repo": "https://www.drupal.org/project/openy_carnation",
+      "notes": "Main theme"
+    },
+    {
+      "name": "drupal/openy_daxko2",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://www.drupal.org/project/openy_daxko2",
+      "notes": "Daxko v2 integration"
+    },
+    {
+      "name": "drupal/openy_er",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://www.drupal.org/project/openy_er",
+      "notes": "Entity reference utilities"
+    },
+    {
+      "name": "drupal/openy_gtranslate",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://www.drupal.org/project/openy_gtranslate",
+      "notes": "Google Translate integration"
+    },
+    {
+      "name": "drupal/openy_mappings",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://www.drupal.org/project/openy_mappings",
+      "notes": "Data mapping utilities"
+    },
+    {
+      "name": "drupal/openy_node_session",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://www.drupal.org/project/openy_node_session",
+      "notes": "Session node type"
+    },
+    {
+      "name": "drupal/openy_pef_gxp_sync",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://www.drupal.org/project/openy_pef_gxp_sync",
+      "notes": "GroupEx Pro sync"
+    },
+    {
+      "name": "drupal/openy_repeat",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://www.drupal.org/project/openy_repeat",
+      "notes": "Content repetition/scheduling"
+    },
+    {
+      "name": "drupal/openy_socrates",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://www.drupal.org/project/openy_socrates",
+      "notes": "Data fetching service"
+    },
+    {
+      "name": "drupal/ws_small_y",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://www.drupal.org/project/ws_small_y",
+      "notes": "Small Y implementation"
+    },
+    {
+      "name": "drupal/y_donate",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://www.drupal.org/project/y_donate",
+      "notes": "Donation functionality"
+    },
+    {
+      "name": "drupal/program_search",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://www.drupal.org/project/program_search",
+      "notes": "Program search functionality"
+    },
+    {
+      "name": "drupal/ymca_sync",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://www.drupal.org/project/ymca_sync",
+      "notes": "YMCA data sync"
+    },
+    {
+      "name": "open-y-subprojects/common_scss",
+      "ymca": true,
+      "type": "drupal-library",
+      "repo": "https://github.com/open-y-subprojects/common_scss",
+      "notes": "Shared SCSS utilities"
+    },
+    {
+      "name": "open-y-subprojects/openy_content_core",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://github.com/open-y-subprojects/openy_content_core",
+      "notes": "Core content types"
+    },
+    {
+      "name": "open-y-subprojects/openy_custom",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://github.com/open-y-subprojects/openy_custom",
+      "notes": "Custom functionality"
+    },
+    {
+      "name": "open-y-subprojects/openy_daxko_gxp_syncer",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://github.com/open-y-subprojects/openy_daxko_gxp_syncer",
+      "notes": "Daxko GroupEx sync"
+    },
+    {
+      "name": "open-y-subprojects/openy_features",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://github.com/open-y-subprojects/openy_features",
+      "notes": "Distribution features"
+    },
+    {
+      "name": "open-y-subprojects/openy_focal_point",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://github.com/open-y-subprojects/openy_focal_point",
+      "notes": "Focal point customizations"
+    },
+    {
+      "name": "open-y-subprojects/openy_hours_formatter",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://github.com/open-y-subprojects/openy_hours_formatter",
+      "notes": "Hours display formatting"
+    },
+    {
+      "name": "open-y-subprojects/openy_map",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://github.com/open-y-subprojects/openy_map",
+      "notes": "Location mapping"
+    },
+    {
+      "name": "open-y-subprojects/ynorth_gxp_spots_proxy",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://github.com/open-y-subprojects/ynorth_gxp_spots_proxy",
+      "notes": "GroupEx spots proxy"
+    },
+    {
+      "name": "open-y-subprojects/openy_docs",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://github.com/open-y-subprojects/openy_docs",
+      "notes": "Documentation"
+    },
+    {
+      "name": "ymcatwincities/media_entity_document",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://github.com/ymcatwincities/media_entity_document",
+      "notes": "Document media type (legacy)"
+    },
+    {
+      "name": "drupal/activenet",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://www.drupal.org/project/activenet",
+      "notes": "ActiveNet CRM integration"
+    },
+    {
+      "name": "drupal/daxko",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://www.drupal.org/project/daxko",
+      "notes": "Daxko CRM integration"
+    },
+    {
+      "name": "drupal/personify",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://www.drupal.org/project/personify",
+      "notes": "Personify CRM integration"
+    },
+    {
+      "name": "drupal/lb_testimonial_blocks",
+      "ymca": true,
+      "type": "drupal-module",
+      "repo": "https://www.drupal.org/project/lb_testimonial_blocks",
+      "notes": "Layout Builder testimonials - podarok maintainer"
+    },
+    {
+      "name": "drupal/address",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/addtoany",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/admin_toolbar",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/advanced_help_block",
+      "ymca": true,
+      "type": "drupal-module",
+      "notes": "YMCA team - Open-Y-Distro maintainer"
+    },
+    {
+      "name": "drupal/better_exposed_filters",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/blazy",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/bootstrap_layout_builder",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/bootstrap_styles",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/captcha",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/ckeditor5_paste_filter",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/colorapi",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/confi",
+      "ymca": true,
+      "type": "drupal-module",
+      "notes": "YMCA team - Open-Y-Distro maintainer"
+    },
+    {
+      "name": "drupal/config_update",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/core",
+      "ymca": false,
+      "type": "drupal-core"
+    },
+    {
+      "name": "drupal/crop",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/css_editor",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/csv_serialization",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/ctools",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/custom_formatters",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/datalayer",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/draggableviews",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/dropzonejs",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/easy_breadcrumb",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/editor_advanced_link",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/embed",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/entity",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/entity_clone",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/entity_embed",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/entity_reference_revisions",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/exif_orientation",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/field_group",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/focal_point",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/fontyourface",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/geolocation",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/google_analytics",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/google_tag",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/hal",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/image_widget_crop",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/inline_entity_form",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/jquery_ui_tabs",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/jquery_ui_tooltip",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/jquery_ui_touch_punch",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/libraries",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/link_attributes",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/metatag",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/migrate_plus",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/migrate_source_csv",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/migrate_tools",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/paragraphs",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/pathauto",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/plugin",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/protected_pages",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/rabbit_hole",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/recaptcha",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/redirect",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/responsive_favicons",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/scheduler",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/search_api",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/search_api_solr",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/simple_menu_icons",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/simple_sitemap",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/slick",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/slick_views",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/social_feed_fetcher",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/token",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/token_filter",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/twig_tweak",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/tzfield",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/upgrade_tool",
+      "ymca": true,
+      "type": "drupal-module",
+      "notes": "YMCA team - Open-Y-Distro maintainer"
+    },
+    {
+      "name": "drupal/vendor_stream_wrapper",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/verf",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/video",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/video_embed_field",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/views_block_filter_block",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/views_data_export",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/views_field_formatter",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/views_infinite_scroll",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/webform",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/media_directories",
+      "ymca": false,
+      "type": "drupal-module"
+    },
+    {
+      "name": "drupal/lb_claro",
+      "ymca": true,
+      "type": "drupal-module",
+      "notes": "Fork with D11 fixes maintained by YCloudYUSA"
+    },
+    {
+      "name": "drupal/features",
+      "ymca": false,
+      "type": "drupal-module"
+    }
+  ],
+  "github_repos_to_analyze": [
+    {
+      "org": "YCloudYUSA",
+      "repo": "yusaopeny",
+      "ymca": true,
+      "primary": true,
+      "notes": "Main distribution profile"
+    },
+    {
+      "org": "YCloudYUSA",
+      "repo": "yusaopeny-project",
+      "ymca": true,
+      "primary": true,
+      "notes": "Composer installer"
+    },
+    {
+      "org": "YCloudYUSA",
+      "repo": "y_lb",
+      "ymca": true,
+      "primary": true,
+      "notes": "Layout Builder"
+    },
+    {
+      "org": "YCloudYUSA",
+      "repo": "yusaopeny_activity_finder",
+      "ymca": true,
+      "primary": true,
+      "notes": "Activity Finder"
+    },
+    {
+      "org": "YCloudYUSA",
+      "repo": "y_pef_schedule",
+      "ymca": true,
+      "primary": false,
+      "notes": "Schedule management"
+    },
+    {
+      "org": "YCloudYUSA",
+      "repo": "yusaopeny_ymca360",
+      "ymca": true,
+      "primary": false,
+      "notes": "YMCA360 integration"
+    },
+    {
+      "org": "YCloudYUSA",
+      "repo": "yusaopeny_gated_content",
+      "ymca": true,
+      "primary": false,
+      "notes": "Virtual Y / Gated content"
+    },
+    {
+      "org": "YCloudYUSA",
+      "repo": "openy_traction_rec",
+      "ymca": true,
+      "primary": false,
+      "notes": "Traction REC integration"
+    },
+    {
+      "org": "YCloudYUSA",
+      "repo": "yusaopeny_memberships",
+      "ymca": true,
+      "primary": false,
+      "notes": "Membership framework"
+    },
+    {
+      "org": "YCloudYUSA",
+      "repo": "y_lb_demo_content",
+      "ymca": true,
+      "primary": false,
+      "notes": "LB demo content"
+    },
+    {
+      "org": "YCloudYUSA",
+      "repo": "useless_machines",
+      "ymca": true,
+      "primary": false,
+      "notes": "Self-disabling modules"
+    },
+    {
+      "org": "YCloudYUSA",
+      "repo": "lb_claro",
+      "ymca": true,
+      "primary": false,
+      "notes": "Fork with D11 fixes"
+    },
+    {
+      "org": "YCloudYUSA",
+      "repo": "fontyourface",
+      "ymca": false,
+      "primary": false,
+      "notes": "Fork of drupal.org module"
+    },
+    {
+      "org": "YCloudYUSA",
+      "repo": "yusaopeny_docs",
+      "ymca": true,
+      "primary": false,
+      "notes": "Documentation only"
+    },
+    {
+      "org": "open-y-subprojects",
+      "repo": "openy_features",
+      "ymca": true,
+      "primary": false,
+      "notes": "Distribution features"
+    },
+    {
+      "org": "open-y-subprojects",
+      "repo": "openy_focal_point",
+      "ymca": true,
+      "primary": false,
+      "notes": "Focal point customizations"
+    },
+    {
+      "org": "open-y-subprojects",
+      "repo": "openy_custom",
+      "ymca": true,
+      "primary": false,
+      "notes": "Custom functionality"
+    },
+    {
+      "org": "open-y-subprojects",
+      "repo": "openy_node_alert",
+      "ymca": true,
+      "primary": false,
+      "notes": "Alert node type"
+    },
+    {
+      "org": "open-y-subprojects",
+      "repo": "openy_map",
+      "ymca": true,
+      "primary": false,
+      "notes": "Location mapping"
+    },
+    {
+      "org": "open-y-subprojects",
+      "repo": "common_scss",
+      "ymca": true,
+      "primary": false,
+      "notes": "Shared SCSS utilities"
+    },
+    {
+      "org": "open-y-subprojects",
+      "repo": "openy_hours_formatter",
+      "ymca": true,
+      "primary": false,
+      "notes": "Hours display formatting"
+    },
+    {
+      "org": "open-y-subprojects",
+      "repo": "openy_demo_content",
+      "ymca": true,
+      "primary": false,
+      "notes": "Demo content"
+    },
+    {
+      "org": "open-y-subprojects",
+      "repo": "openy_daxko_gxp_syncer",
+      "ymca": true,
+      "primary": false,
+      "notes": "Daxko GroupEx sync"
+    },
+    {
+      "org": "open-y-subprojects",
+      "repo": "openy_content_core",
+      "ymca": true,
+      "primary": false,
+      "notes": "Core content types"
+    },
+    {
+      "org": "open-y-subprojects",
+      "repo": "ynorth_gxp_spots_proxy",
+      "ymca": true,
+      "primary": false,
+      "notes": "GroupEx spots proxy"
+    },
+    {
+      "org": "open-y-subprojects",
+      "repo": "openy_docs",
+      "ymca": true,
+      "primary": false,
+      "notes": "Documentation"
+    }
+  ],
+  "summary": {
+    "total_packages_in_composer": 115,
+    "ymca_packages_in_composer": 40,
+    "contrib_packages": 75,
+    "drupal_org_ymca_modules": 56,
+    "github_repos_ycloudyusa": 14,
+    "github_repos_open_y_subprojects": 12,
+    "github_repos_total": 26
+  }
+}

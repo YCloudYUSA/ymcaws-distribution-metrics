@@ -1,0 +1,17 @@
+# Dependencies
+/vendor/
+composer.phar
+composer.lock
+
+# Repository clones (large, downloaded during analysis)
+/repos/
+
+# Temporary output files
+/output/
+
+# Python
+__pycache__/
+*.pyc
+
+# Local tooling
+.beads/
