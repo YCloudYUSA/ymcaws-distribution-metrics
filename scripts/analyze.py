@@ -164,17 +164,37 @@ def get_commits_per_year(repo_dirs: list[Path]) -> list[dict]:
 
 
 def classify_commit(subject: str) -> str:
-    """Classify a commit by its message prefix."""
+    """Classify a commit by its message using Conventional Commits specification.
+
+    Format: <type>[optional scope][!]: <description>
+    See: https://www.conventionalcommits.org/en/v1.0.0/
+    """
     subject = subject.strip().lower()
-    if subject.startswith(("fix:", "bug:", "bugfix:")):
+
+    # Conventional commits pattern: type(optional-scope)!: description
+    # Types that indicate bugs
+    bug_pattern = r'^(fix|bugfix|bug|hotfix)(\([^)]+\))?!?:'
+    if re.match(bug_pattern, subject):
         return "Bug"
-    elif subject.startswith(("feat:", "feature:")):
+
+    # Types that indicate features
+    feature_pattern = r'^(feat|feature)(\([^)]+\))?!?:'
+    if re.match(feature_pattern, subject):
         return "Feature"
-    elif subject.startswith(("task:", "docs:", "ci:", "test:", "perf:", "chore:", "refactor:")):
+
+    # Types that indicate maintenance/tasks
+    maintenance_pattern = r'^(build|chore|ci|docs|style|refactor|perf|test|task|revert)(\([^)]+\))?!?:'
+    if re.match(maintenance_pattern, subject):
         return "Maintenance"
-    # Check for issue patterns like "Issue #123" or merge commits
-    if "merge" in subject:
+
+    # Drupal-style issue references: "Issue #1234567"
+    if re.match(r'^issue\s*#?\d+', subject):
         return "Maintenance"
+
+    # Merge commits
+    if subject.startswith("merge"):
+        return "Maintenance"
+
     return "Unknown"
 
 
@@ -337,7 +357,8 @@ def analyze_directory(work_dir: Path, php_script: Path) -> Optional[dict]:
 
 
 def analyze_version(repo_dirs: list[Path], year_month: str, output_dir: Path,
-                    php_script: Path, current: int = 0, total: int = 0) -> Optional[dict]:
+                    php_script: Path, current: int = 0, total: int = 0,
+                    collect_per_repo: bool = False) -> Optional[dict]:
     """Analyze a specific point in time across all repos."""
     work_dir = output_dir / "work"
     if work_dir.exists():
@@ -370,7 +391,7 @@ def analyze_version(repo_dirs: list[Path], year_month: str, output_dir: Path,
         log_warn(f"Analysis returned no data for {year_month}")
         return None
 
-    return {
+    result = {
         "date": year_month,
         "commit": "multi",
         "production": data.get("production", {}),
@@ -380,6 +401,34 @@ def analyze_version(repo_dirs: list[Path], year_month: str, output_dir: Path,
         "antipatterns": data.get("antipatterns", {}),
         "hotspots": data.get("hotspots", []),
     }
+
+    # Collect per-repo stats for current snapshot
+    if collect_per_repo:
+        per_repo = []
+        for repo_name in exported_repos:
+            repo_work_dir = work_dir / repo_name
+            if repo_work_dir.exists():
+                repo_data = analyze_directory(repo_work_dir, php_script)
+                if repo_data:
+                    # Clean up repo name for display
+                    display_name = repo_name
+                    for prefix in ["YCloudYUSA_", "open-y-subprojects_", "drupal_"]:
+                        if display_name.startswith(prefix):
+                            display_name = display_name[len(prefix):]
+                            break
+                    per_repo.append({
+                        "name": display_name,
+                        "loc": repo_data.get("production", {}).get("loc", 0),
+                        "ccn": repo_data.get("production", {}).get("ccn", {}).get("avg", 0),
+                        "mi": repo_data.get("production", {}).get("mi", {}).get("avg", 0),
+                        "antipatterns": sum(repo_data.get("antipatterns", {}).values()),
+                    })
+        # Sort by LOC descending
+        per_repo.sort(key=lambda x: x["loc"], reverse=True)
+        result["perRepo"] = per_repo
+        log_info(f"Collected stats for {len(per_repo)} individual repos")
+
+    return result
 
 
 def find_project_dir() -> Path:
@@ -476,11 +525,12 @@ def main():
             snapshots.append(result)
             log_debug(f"Snapshot {year_month} added, total snapshots: {len(snapshots)}")
 
-    # Analyze current HEAD
-    log_info("Analyzing current HEAD...")
+    # Analyze current HEAD with per-repo stats
+    log_info("Analyzing current HEAD with per-repo breakdown...")
     current_date = datetime.now().strftime("%Y-%m")
     if not snapshots or snapshots[-1]["date"] != current_date:
-        result = analyze_version(repo_dirs, current_date, output_dir, php_script)
+        result = analyze_version(repo_dirs, current_date, output_dir, php_script,
+                                collect_per_repo=True)
         if result:
             snapshots.append(result)
 

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-08T17:36:52.301796",
+  "generated": "2026-01-08T17:55:10.564060",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -99,16 +99,16 @@
       "total": 365,
       "features": 0,
       "bugs": 0,
-      "maintenance": 93,
-      "unknown": 272
+      "maintenance": 92,
+      "unknown": 273
     },
     {
       "date": "2015-12",
       "total": 501,
       "features": 0,
       "bugs": 0,
-      "maintenance": 159,
-      "unknown": 342
+      "maintenance": 158,
+      "unknown": 343
     },
     {
       "date": "2016-01",
@@ -123,64 +123,64 @@
       "total": 485,
       "features": 0,
       "bugs": 0,
-      "maintenance": 197,
-      "unknown": 288
+      "maintenance": 196,
+      "unknown": 289
     },
     {
       "date": "2016-03",
       "total": 670,
       "features": 0,
       "bugs": 0,
-      "maintenance": 283,
-      "unknown": 387
+      "maintenance": 281,
+      "unknown": 389
     },
     {
       "date": "2016-04",
       "total": 340,
       "features": 0,
       "bugs": 0,
-      "maintenance": 132,
-      "unknown": 208
+      "maintenance": 128,
+      "unknown": 212
     },
     {
       "date": "2016-05",
       "total": 413,
       "features": 0,
       "bugs": 0,
-      "maintenance": 139,
-      "unknown": 274
+      "maintenance": 137,
+      "unknown": 276
     },
     {
       "date": "2016-06",
       "total": 570,
       "features": 0,
       "bugs": 0,
-      "maintenance": 186,
-      "unknown": 384
+      "maintenance": 172,
+      "unknown": 398
     },
     {
       "date": "2016-07",
       "total": 924,
       "features": 0,
       "bugs": 0,
-      "maintenance": 326,
-      "unknown": 598
+      "maintenance": 315,
+      "unknown": 609
     },
     {
       "date": "2016-08",
       "total": 705,
       "features": 0,
       "bugs": 0,
-      "maintenance": 307,
-      "unknown": 398
+      "maintenance": 300,
+      "unknown": 405
     },
     {
       "date": "2016-09",
       "total": 401,
       "features": 0,
       "bugs": 0,
-      "maintenance": 160,
-      "unknown": 241
+      "maintenance": 157,
+      "unknown": 244
     },
     {
       "date": "2016-10",
@@ -194,9 +194,9 @@
       "date": "2016-11",
       "total": 573,
       "features": 0,
-      "bugs": 0,
-      "maintenance": 203,
-      "unknown": 370
+      "bugs": 2,
+      "maintenance": 202,
+      "unknown": 369
     },
     {
       "date": "2016-12",
@@ -211,16 +211,16 @@
       "total": 1244,
       "features": 0,
       "bugs": 0,
-      "maintenance": 248,
-      "unknown": 996
+      "maintenance": 243,
+      "unknown": 1001
     },
     {
       "date": "2017-02",
       "total": 1135,
       "features": 0,
       "bugs": 0,
-      "maintenance": 306,
-      "unknown": 829
+      "maintenance": 318,
+      "unknown": 817
     },
     {
       "date": "2017-03",
@@ -235,128 +235,128 @@
       "total": 606,
       "features": 0,
       "bugs": 0,
-      "maintenance": 166,
-      "unknown": 440
+      "maintenance": 165,
+      "unknown": 441
     },
     {
       "date": "2017-05",
       "total": 861,
       "features": 0,
       "bugs": 0,
-      "maintenance": 246,
-      "unknown": 615
+      "maintenance": 238,
+      "unknown": 623
     },
     {
       "date": "2017-06",
       "total": 1100,
       "features": 0,
       "bugs": 0,
-      "maintenance": 382,
-      "unknown": 718
+      "maintenance": 355,
+      "unknown": 745
     },
     {
       "date": "2017-07",
       "total": 715,
       "features": 0,
       "bugs": 0,
-      "maintenance": 281,
-      "unknown": 434
+      "maintenance": 244,
+      "unknown": 471
     },
     {
       "date": "2017-08",
       "total": 657,
       "features": 0,
       "bugs": 0,
-      "maintenance": 193,
-      "unknown": 464
+      "maintenance": 184,
+      "unknown": 473
     },
     {
       "date": "2017-09",
       "total": 328,
       "features": 0,
       "bugs": 1,
-      "maintenance": 65,
-      "unknown": 262
+      "maintenance": 63,
+      "unknown": 264
     },
     {
       "date": "2017-10",
       "total": 405,
       "features": 0,
       "bugs": 0,
-      "maintenance": 124,
-      "unknown": 281
+      "maintenance": 120,
+      "unknown": 285
     },
     {
       "date": "2017-11",
       "total": 496,
       "features": 0,
       "bugs": 0,
-      "maintenance": 169,
-      "unknown": 327
+      "maintenance": 167,
+      "unknown": 329
     },
     {
       "date": "2017-12",
       "total": 258,
       "features": 0,
       "bugs": 0,
-      "maintenance": 93,
-      "unknown": 165
+      "maintenance": 92,
+      "unknown": 166
     },
     {
       "date": "2018-01",
       "total": 363,
       "features": 0,
       "bugs": 0,
-      "maintenance": 138,
-      "unknown": 225
+      "maintenance": 122,
+      "unknown": 241
     },
     {
       "date": "2018-02",
       "total": 364,
       "features": 0,
       "bugs": 0,
-      "maintenance": 115,
-      "unknown": 249
+      "maintenance": 120,
+      "unknown": 244
     },
     {
       "date": "2018-03",
       "total": 392,
       "features": 0,
       "bugs": 0,
-      "maintenance": 98,
-      "unknown": 294
+      "maintenance": 96,
+      "unknown": 296
     },
     {
       "date": "2018-04",
       "total": 447,
       "features": 0,
       "bugs": 0,
-      "maintenance": 161,
-      "unknown": 286
+      "maintenance": 158,
+      "unknown": 289
     },
     {
       "date": "2018-05",
       "total": 825,
       "features": 0,
       "bugs": 0,
-      "maintenance": 266,
-      "unknown": 559
+      "maintenance": 259,
+      "unknown": 566
     },
     {
       "date": "2018-06",
       "total": 448,
       "features": 0,
       "bugs": 0,
-      "maintenance": 150,
-      "unknown": 298
+      "maintenance": 147,
+      "unknown": 301
     },
     {
       "date": "2018-07",
       "total": 599,
       "features": 0,
       "bugs": 0,
-      "maintenance": 141,
-      "unknown": 458
+      "maintenance": 140,
+      "unknown": 459
     },
     {
       "date": "2018-08",
@@ -371,24 +371,24 @@
       "total": 445,
       "features": 0,
       "bugs": 0,
-      "maintenance": 134,
-      "unknown": 311
+      "maintenance": 144,
+      "unknown": 301
     },
     {
       "date": "2018-10",
       "total": 386,
       "features": 0,
       "bugs": 0,
-      "maintenance": 84,
-      "unknown": 302
+      "maintenance": 86,
+      "unknown": 300
     },
     {
       "date": "2018-11",
       "total": 515,
       "features": 0,
       "bugs": 0,
-      "maintenance": 145,
-      "unknown": 370
+      "maintenance": 130,
+      "unknown": 385
     },
     {
       "date": "2018-12",
@@ -403,8 +403,8 @@
       "total": 803,
       "features": 0,
       "bugs": 0,
-      "maintenance": 259,
-      "unknown": 544
+      "maintenance": 264,
+      "unknown": 539
     },
     {
       "date": "2019-02",
@@ -419,8 +419,8 @@
       "total": 221,
       "features": 0,
       "bugs": 0,
-      "maintenance": 27,
-      "unknown": 194
+      "maintenance": 31,
+      "unknown": 190
     },
     {
       "date": "2019-04",
@@ -451,16 +451,16 @@
       "total": 241,
       "features": 0,
       "bugs": 0,
-      "maintenance": 79,
-      "unknown": 162
+      "maintenance": 77,
+      "unknown": 164
     },
     {
       "date": "2019-08",
       "total": 485,
       "features": 0,
       "bugs": 0,
-      "maintenance": 135,
-      "unknown": 350
+      "maintenance": 131,
+      "unknown": 354
     },
     {
       "date": "2019-09",
@@ -475,16 +475,16 @@
       "total": 260,
       "features": 0,
       "bugs": 0,
-      "maintenance": 69,
-      "unknown": 191
+      "maintenance": 68,
+      "unknown": 192
     },
     {
       "date": "2019-11",
       "total": 420,
       "features": 0,
       "bugs": 0,
-      "maintenance": 143,
-      "unknown": 277
+      "maintenance": 151,
+      "unknown": 269
     },
     {
       "date": "2019-12",
@@ -507,8 +507,8 @@
       "total": 473,
       "features": 0,
       "bugs": 0,
-      "maintenance": 250,
-      "unknown": 223
+      "maintenance": 246,
+      "unknown": 227
     },
     {
       "date": "2020-03",
@@ -531,40 +531,40 @@
       "total": 408,
       "features": 0,
       "bugs": 0,
-      "maintenance": 135,
-      "unknown": 273
+      "maintenance": 131,
+      "unknown": 277
     },
     {
       "date": "2020-06",
       "total": 727,
       "features": 0,
       "bugs": 0,
-      "maintenance": 148,
-      "unknown": 579
+      "maintenance": 150,
+      "unknown": 577
     },
     {
       "date": "2020-07",
       "total": 510,
       "features": 0,
       "bugs": 0,
-      "maintenance": 174,
-      "unknown": 336
+      "maintenance": 178,
+      "unknown": 332
     },
     {
       "date": "2020-08",
       "total": 650,
       "features": 0,
       "bugs": 0,
-      "maintenance": 205,
-      "unknown": 445
+      "maintenance": 207,
+      "unknown": 443
     },
     {
       "date": "2020-09",
       "total": 720,
       "features": 0,
       "bugs": 0,
-      "maintenance": 246,
-      "unknown": 474
+      "maintenance": 245,
+      "unknown": 475
     },
     {
       "date": "2020-10",
@@ -579,40 +579,40 @@
       "total": 466,
       "features": 0,
       "bugs": 0,
-      "maintenance": 158,
-      "unknown": 308
+      "maintenance": 150,
+      "unknown": 316
     },
     {
       "date": "2020-12",
       "total": 790,
       "features": 0,
       "bugs": 0,
-      "maintenance": 232,
-      "unknown": 558
+      "maintenance": 228,
+      "unknown": 562
     },
     {
       "date": "2021-01",
       "total": 510,
       "features": 0,
       "bugs": 0,
-      "maintenance": 148,
-      "unknown": 362
+      "maintenance": 147,
+      "unknown": 363
     },
     {
       "date": "2021-02",
       "total": 437,
       "features": 0,
       "bugs": 0,
-      "maintenance": 140,
-      "unknown": 297
+      "maintenance": 136,
+      "unknown": 301
     },
     {
       "date": "2021-03",
       "total": 310,
       "features": 0,
       "bugs": 0,
-      "maintenance": 108,
-      "unknown": 202
+      "maintenance": 106,
+      "unknown": 204
     },
     {
       "date": "2021-04",
@@ -627,352 +627,352 @@
       "total": 287,
       "features": 0,
       "bugs": 0,
-      "maintenance": 85,
-      "unknown": 202
+      "maintenance": 89,
+      "unknown": 198
     },
     {
       "date": "2021-06",
       "total": 359,
-      "features": 13,
-      "bugs": 25,
-      "maintenance": 106,
-      "unknown": 215
+      "features": 41,
+      "bugs": 32,
+      "maintenance": 111,
+      "unknown": 175
     },
     {
       "date": "2021-07",
       "total": 331,
-      "features": 1,
-      "bugs": 14,
-      "maintenance": 101,
-      "unknown": 215
+      "features": 12,
+      "bugs": 74,
+      "maintenance": 71,
+      "unknown": 174
     },
     {
       "date": "2021-08",
       "total": 295,
-      "features": 3,
-      "bugs": 33,
-      "maintenance": 101,
-      "unknown": 158
+      "features": 21,
+      "bugs": 85,
+      "maintenance": 113,
+      "unknown": 76
     },
     {
       "date": "2021-09",
       "total": 258,
-      "features": 1,
-      "bugs": 23,
-      "maintenance": 84,
-      "unknown": 150
+      "features": 30,
+      "bugs": 66,
+      "maintenance": 67,
+      "unknown": 95
     },
     {
       "date": "2021-10",
       "total": 166,
-      "features": 7,
-      "bugs": 17,
-      "maintenance": 55,
-      "unknown": 87
+      "features": 11,
+      "bugs": 32,
+      "maintenance": 38,
+      "unknown": 85
     },
     {
       "date": "2021-11",
       "total": 262,
-      "features": 3,
-      "bugs": 39,
-      "maintenance": 81,
-      "unknown": 139
+      "features": 18,
+      "bugs": 65,
+      "maintenance": 65,
+      "unknown": 114
     },
     {
       "date": "2021-12",
       "total": 364,
-      "features": 5,
-      "bugs": 51,
-      "maintenance": 67,
-      "unknown": 241
+      "features": 16,
+      "bugs": 87,
+      "maintenance": 98,
+      "unknown": 163
     },
     {
       "date": "2022-01",
       "total": 252,
-      "features": 26,
-      "bugs": 20,
-      "maintenance": 78,
-      "unknown": 128
+      "features": 31,
+      "bugs": 38,
+      "maintenance": 81,
+      "unknown": 102
     },
     {
       "date": "2022-02",
       "total": 136,
-      "features": 5,
-      "bugs": 11,
+      "features": 6,
+      "bugs": 14,
       "maintenance": 41,
-      "unknown": 79
+      "unknown": 75
     },
     {
       "date": "2022-03",
       "total": 112,
       "features": 3,
-      "bugs": 20,
-      "maintenance": 39,
-      "unknown": 50
+      "bugs": 24,
+      "maintenance": 40,
+      "unknown": 45
     },
     {
       "date": "2022-04",
       "total": 67,
-      "features": 2,
-      "bugs": 11,
-      "maintenance": 27,
-      "unknown": 27
+      "features": 3,
+      "bugs": 14,
+      "maintenance": 25,
+      "unknown": 25
     },
     {
       "date": "2022-05",
       "total": 132,
-      "features": 12,
-      "bugs": 26,
-      "maintenance": 56,
-      "unknown": 38
+      "features": 13,
+      "bugs": 27,
+      "maintenance": 63,
+      "unknown": 29
     },
     {
       "date": "2022-06",
       "total": 47,
       "features": 14,
-      "bugs": 10,
+      "bugs": 11,
       "maintenance": 11,
-      "unknown": 12
+      "unknown": 11
     },
     {
       "date": "2022-07",
       "total": 70,
-      "features": 14,
+      "features": 15,
       "bugs": 17,
       "maintenance": 16,
-      "unknown": 23
+      "unknown": 22
     },
     {
       "date": "2022-08",
       "total": 33,
-      "features": 2,
-      "bugs": 13,
+      "features": 4,
+      "bugs": 14,
       "maintenance": 10,
-      "unknown": 8
+      "unknown": 5
     },
     {
       "date": "2022-09",
       "total": 105,
-      "features": 15,
-      "bugs": 19,
+      "features": 17,
+      "bugs": 20,
       "maintenance": 33,
-      "unknown": 38
+      "unknown": 35
     },
     {
       "date": "2022-10",
       "total": 174,
-      "features": 27,
-      "bugs": 20,
-      "maintenance": 34,
-      "unknown": 93
+      "features": 28,
+      "bugs": 21,
+      "maintenance": 54,
+      "unknown": 71
     },
     {
       "date": "2022-11",
       "total": 176,
       "features": 9,
       "bugs": 13,
-      "maintenance": 46,
-      "unknown": 108
+      "maintenance": 47,
+      "unknown": 107
     },
     {
       "date": "2022-12",
       "total": 144,
       "features": 20,
       "bugs": 5,
-      "maintenance": 30,
-      "unknown": 89
+      "maintenance": 29,
+      "unknown": 90
     },
     {
       "date": "2023-01",
       "total": 120,
-      "features": 11,
+      "features": 12,
       "bugs": 8,
-      "maintenance": 27,
-      "unknown": 74
+      "maintenance": 31,
+      "unknown": 69
     },
     {
       "date": "2023-02",
       "total": 162,
-      "features": 1,
-      "bugs": 2,
-      "maintenance": 33,
-      "unknown": 126
+      "features": 2,
+      "bugs": 3,
+      "maintenance": 91,
+      "unknown": 66
     },
     {
       "date": "2023-03",
       "total": 196,
-      "features": 28,
+      "features": 30,
       "bugs": 9,
-      "maintenance": 39,
-      "unknown": 120
+      "maintenance": 101,
+      "unknown": 56
     },
     {
       "date": "2023-04",
       "total": 181,
       "features": 37,
       "bugs": 27,
-      "maintenance": 44,
-      "unknown": 73
+      "maintenance": 72,
+      "unknown": 45
     },
     {
       "date": "2023-05",
       "total": 363,
-      "features": 42,
-      "bugs": 57,
-      "maintenance": 95,
-      "unknown": 169
+      "features": 45,
+      "bugs": 58,
+      "maintenance": 134,
+      "unknown": 126
     },
     {
       "date": "2023-06",
       "total": 267,
-      "features": 24,
-      "bugs": 37,
-      "maintenance": 79,
-      "unknown": 127
+      "features": 27,
+      "bugs": 38,
+      "maintenance": 109,
+      "unknown": 93
     },
     {
       "date": "2023-07",
       "total": 287,
-      "features": 28,
-      "bugs": 57,
-      "maintenance": 87,
-      "unknown": 115
+      "features": 30,
+      "bugs": 59,
+      "maintenance": 143,
+      "unknown": 55
     },
     {
       "date": "2023-08",
       "total": 175,
       "features": 28,
       "bugs": 24,
-      "maintenance": 55,
-      "unknown": 68
+      "maintenance": 64,
+      "unknown": 59
     },
     {
       "date": "2023-09",
       "total": 149,
       "features": 5,
-      "bugs": 22,
-      "maintenance": 66,
-      "unknown": 56
+      "bugs": 24,
+      "maintenance": 78,
+      "unknown": 42
     },
     {
       "date": "2023-10",
       "total": 296,
-      "features": 29,
-      "bugs": 43,
-      "maintenance": 74,
-      "unknown": 150
+      "features": 30,
+      "bugs": 44,
+      "maintenance": 98,
+      "unknown": 124
     },
     {
       "date": "2023-11",
       "total": 321,
       "features": 23,
       "bugs": 32,
-      "maintenance": 118,
-      "unknown": 148
+      "maintenance": 166,
+      "unknown": 100
     },
     {
       "date": "2023-12",
       "total": 159,
       "features": 8,
       "bugs": 25,
-      "maintenance": 65,
-      "unknown": 61
+      "maintenance": 76,
+      "unknown": 50
     },
     {
       "date": "2024-01",
       "total": 91,
-      "features": 15,
+      "features": 16,
       "bugs": 6,
       "maintenance": 20,
-      "unknown": 50
+      "unknown": 49
     },
     {
       "date": "2024-02",
       "total": 100,
       "features": 11,
       "bugs": 12,
-      "maintenance": 34,
-      "unknown": 43
+      "maintenance": 35,
+      "unknown": 42
     },
     {
       "date": "2024-03",
       "total": 206,
       "features": 12,
-      "bugs": 36,
-      "maintenance": 68,
-      "unknown": 90
+      "bugs": 37,
+      "maintenance": 85,
+      "unknown": 72
     },
     {
       "date": "2024-04",
       "total": 155,
       "features": 14,
       "bugs": 34,
-      "maintenance": 53,
-      "unknown": 54
+      "maintenance": 62,
+      "unknown": 45
     },
     {
       "date": "2024-05",
       "total": 160,
       "features": 11,
       "bugs": 26,
-      "maintenance": 61,
-      "unknown": 62
+      "maintenance": 69,
+      "unknown": 54
     },
     {
       "date": "2024-06",
       "total": 130,
       "features": 8,
       "bugs": 6,
-      "maintenance": 61,
-      "unknown": 55
+      "maintenance": 65,
+      "unknown": 51
     },
     {
       "date": "2024-07",
       "total": 114,
       "features": 1,
       "bugs": 7,
-      "maintenance": 35,
-      "unknown": 71
+      "maintenance": 42,
+      "unknown": 64
     },
     {
       "date": "2024-08",
       "total": 110,
       "features": 3,
       "bugs": 16,
-      "maintenance": 41,
-      "unknown": 50
+      "maintenance": 54,
+      "unknown": 37
     },
     {
       "date": "2024-09",
       "total": 132,
-      "features": 7,
+      "features": 8,
       "bugs": 13,
-      "maintenance": 29,
-      "unknown": 83
+      "maintenance": 47,
+      "unknown": 64
     },
     {
       "date": "2024-10",
       "total": 213,
       "features": 7,
       "bugs": 3,
-      "maintenance": 49,
-      "unknown": 154
+      "maintenance": 100,
+      "unknown": 103
     },
     {
       "date": "2024-11",
       "total": 109,
       "features": 1,
       "bugs": 0,
-      "maintenance": 28,
-      "unknown": 80
+      "maintenance": 59,
+      "unknown": 49
     },
     {
       "date": "2024-12",
       "total": 100,
       "features": 3,
       "bugs": 2,
-      "maintenance": 38,
-      "unknown": 57
+      "maintenance": 46,
+      "unknown": 49
     },
     {
       "date": "2025-01",
@@ -987,40 +987,40 @@
       "total": 21,
       "features": 9,
       "bugs": 1,
-      "maintenance": 9,
-      "unknown": 2
+      "maintenance": 8,
+      "unknown": 3
     },
     {
       "date": "2025-03",
       "total": 61,
-      "features": 5,
+      "features": 6,
       "bugs": 2,
       "maintenance": 20,
-      "unknown": 34
+      "unknown": 33
     },
     {
       "date": "2025-04",
       "total": 103,
-      "features": 4,
+      "features": 10,
       "bugs": 10,
-      "maintenance": 21,
-      "unknown": 68
+      "maintenance": 23,
+      "unknown": 60
     },
     {
       "date": "2025-05",
       "total": 138,
       "features": 13,
       "bugs": 3,
-      "maintenance": 11,
-      "unknown": 111
+      "maintenance": 12,
+      "unknown": 110
     },
     {
       "date": "2025-06",
       "total": 68,
-      "features": 12,
+      "features": 13,
       "bugs": 11,
-      "maintenance": 21,
-      "unknown": 24
+      "maintenance": 22,
+      "unknown": 22
     },
     {
       "date": "2025-07",
@@ -1035,8 +1035,8 @@
       "total": 59,
       "features": 12,
       "bugs": 9,
-      "maintenance": 23,
-      "unknown": 15
+      "maintenance": 25,
+      "unknown": 13
     },
     {
       "date": "2025-09",
@@ -1050,33 +1050,33 @@
       "date": "2025-10",
       "total": 63,
       "features": 3,
-      "bugs": 11,
+      "bugs": 13,
       "maintenance": 29,
-      "unknown": 20
+      "unknown": 18
     },
     {
       "date": "2025-11",
       "total": 154,
       "features": 21,
-      "bugs": 14,
-      "maintenance": 57,
+      "bugs": 15,
+      "maintenance": 56,
       "unknown": 62
     },
     {
       "date": "2025-12",
       "total": 217,
-      "features": 73,
-      "bugs": 58,
+      "features": 75,
+      "bugs": 61,
       "maintenance": 56,
-      "unknown": 30
+      "unknown": 25
     },
     {
       "date": "2026-01",
       "total": 28,
-      "features": 0,
+      "features": 2,
       "bugs": 4,
       "maintenance": 15,
-      "unknown": 9
+      "unknown": 7
     }
   ],
   "snapshots": [
@@ -54308,6 +54308,519 @@
           "mi": 69,
           "antipatterns": 0
         }
+      ],
+      "perRepo": [
+        {
+          "name": "yusaopeny_gated_content",
+          "loc": 15684,
+          "ccn": 2.3,
+          "mi": 86.5,
+          "antipatterns": 1774
+        },
+        {
+          "name": "openy_gated_content",
+          "loc": 12756,
+          "ccn": 2.3,
+          "mi": 87,
+          "antipatterns": 1244
+        },
+        {
+          "name": "openy_features",
+          "loc": 10438,
+          "ccn": 2.5,
+          "mi": 92.8,
+          "antipatterns": 1193
+        },
+        {
+          "name": "openy_custom",
+          "loc": 7490,
+          "ccn": 2.4,
+          "mi": 86.6,
+          "antipatterns": 787
+        },
+        {
+          "name": "openy_digital_signage",
+          "loc": 6643,
+          "ccn": 2.2,
+          "mi": 83.5,
+          "antipatterns": 571
+        },
+        {
+          "name": "yusaopeny_activity_finder",
+          "loc": 3463,
+          "ccn": 3.3,
+          "mi": 78.1,
+          "antipatterns": 466
+        },
+        {
+          "name": "yusaopeny",
+          "loc": 2715,
+          "ccn": 2.4,
+          "mi": 82.8,
+          "antipatterns": 564
+        },
+        {
+          "name": "openy_activity_finder",
+          "loc": 2620,
+          "ccn": 3.4,
+          "mi": 80.7,
+          "antipatterns": 323
+        },
+        {
+          "name": "y_lb",
+          "loc": 2201,
+          "ccn": 2.5,
+          "mi": 92.8,
+          "antipatterns": 212
+        },
+        {
+          "name": "yusaopeny_memberships",
+          "loc": 1985,
+          "ccn": 2.8,
+          "mi": 85.4,
+          "antipatterns": 282
+        },
+        {
+          "name": "openy_repeat",
+          "loc": 1795,
+          "ccn": 3.8,
+          "mi": 82.5,
+          "antipatterns": 91
+        },
+        {
+          "name": "ws_small_y",
+          "loc": 1639,
+          "ccn": 2.5,
+          "mi": 96,
+          "antipatterns": 153
+        },
+        {
+          "name": "openy_traction_rec",
+          "loc": 1632,
+          "ccn": 2,
+          "mi": 92.5,
+          "antipatterns": 71
+        },
+        {
+          "name": "openy_pef_gxp_sync",
+          "loc": 1513,
+          "ccn": 3,
+          "mi": 80.6,
+          "antipatterns": 41
+        },
+        {
+          "name": "openy_daxko_gxp_syncer",
+          "loc": 1410,
+          "ccn": 2.1,
+          "mi": 80.5,
+          "antipatterns": 64
+        },
+        {
+          "name": "program_search",
+          "loc": 1231,
+          "ccn": 3.4,
+          "mi": 78.6,
+          "antipatterns": 159
+        },
+        {
+          "name": "yusaopeny_ymca360",
+          "loc": 1181,
+          "ccn": 1.7,
+          "mi": 93,
+          "antipatterns": 104
+        },
+        {
+          "name": "ws_event",
+          "loc": 1171,
+          "ccn": 3.1,
+          "mi": 90.4,
+          "antipatterns": 125
+        },
+        {
+          "name": "y_camp",
+          "loc": 1058,
+          "ccn": 2.5,
+          "mi": 85.4,
+          "antipatterns": 96
+        },
+        {
+          "name": "openy_map",
+          "loc": 1044,
+          "ccn": 2.8,
+          "mi": 80.7,
+          "antipatterns": 214
+        },
+        {
+          "name": "y_branch",
+          "loc": 898,
+          "ccn": 3.3,
+          "mi": 77.4,
+          "antipatterns": 40
+        },
+        {
+          "name": "openy_lily",
+          "loc": 746,
+          "ccn": 4.7,
+          "mi": 83.2,
+          "antipatterns": 123
+        },
+        {
+          "name": "openy_daxko2",
+          "loc": 739,
+          "ccn": 5.5,
+          "mi": 60.8,
+          "antipatterns": 63
+        },
+        {
+          "name": "openy_mappings",
+          "loc": 728,
+          "ccn": 1.6,
+          "mi": 95.3,
+          "antipatterns": 18
+        },
+        {
+          "name": "openy_node_alert",
+          "loc": 727,
+          "ccn": 3.1,
+          "mi": 88.5,
+          "antipatterns": 50
+        },
+        {
+          "name": "openy_rose",
+          "loc": 647,
+          "ccn": 5,
+          "mi": 83.9,
+          "antipatterns": 100
+        },
+        {
+          "name": "y_pef_schedule",
+          "loc": 625,
+          "ccn": 2,
+          "mi": 95.7,
+          "antipatterns": 72
+        },
+        {
+          "name": "openy_focal_point",
+          "loc": 576,
+          "ccn": 2.1,
+          "mi": 82.2,
+          "antipatterns": 122
+        },
+        {
+          "name": "ws_promotion",
+          "loc": 554,
+          "ccn": 1.9,
+          "mi": 97.9,
+          "antipatterns": 66
+        },
+        {
+          "name": "y_lb_article",
+          "loc": 522,
+          "ccn": 2.2,
+          "mi": 96.7,
+          "antipatterns": 70
+        },
+        {
+          "name": "y_facility",
+          "loc": 451,
+          "ccn": 2.6,
+          "mi": 74.7,
+          "antipatterns": 23
+        },
+        {
+          "name": "lb_cards",
+          "loc": 432,
+          "ccn": 3.6,
+          "mi": 84.4,
+          "antipatterns": 33
+        },
+        {
+          "name": "openy_demo_content",
+          "loc": 404,
+          "ccn": 3.1,
+          "mi": 55.6,
+          "antipatterns": 21
+        },
+        {
+          "name": "lb_grid_cta",
+          "loc": 402,
+          "ccn": 2.8,
+          "mi": 91.5,
+          "antipatterns": 46
+        },
+        {
+          "name": "y_donate",
+          "loc": 368,
+          "ccn": 3.4,
+          "mi": 84.2,
+          "antipatterns": 74
+        },
+        {
+          "name": "y_program",
+          "loc": 349,
+          "ccn": 2.5,
+          "mi": 77.3,
+          "antipatterns": 11
+        },
+        {
+          "name": "lb_related_events_blocks",
+          "loc": 320,
+          "ccn": 2.7,
+          "mi": 90.3,
+          "antipatterns": 43
+        },
+        {
+          "name": "lb_theme_switcher",
+          "loc": 315,
+          "ccn": 4.3,
+          "mi": 81.4,
+          "antipatterns": 9
+        },
+        {
+          "name": "openy_node_session",
+          "loc": 307,
+          "ccn": 1.9,
+          "mi": 92.2,
+          "antipatterns": 29
+        },
+        {
+          "name": "y_program_subcategory",
+          "loc": 301,
+          "ccn": 2.4,
+          "mi": 76.1,
+          "antipatterns": 10
+        },
+        {
+          "name": "ynorth_gxp_spots_proxy",
+          "loc": 297,
+          "ccn": 3.8,
+          "mi": 85.7,
+          "antipatterns": 2
+        },
+        {
+          "name": "lb_branch_hours_blocks",
+          "loc": 281,
+          "ccn": 2.7,
+          "mi": 79.6,
+          "antipatterns": 46
+        },
+        {
+          "name": "lb_related_articles_blocks",
+          "loc": 274,
+          "ccn": 3.3,
+          "mi": 88.7,
+          "antipatterns": 48
+        },
+        {
+          "name": "openy_addthis",
+          "loc": 254,
+          "ccn": 2.2,
+          "mi": 96.5,
+          "antipatterns": 28
+        },
+        {
+          "name": "lb_accordion",
+          "loc": 217,
+          "ccn": 3,
+          "mi": 91.4,
+          "antipatterns": 29
+        },
+        {
+          "name": "lb_hero",
+          "loc": 211,
+          "ccn": 2.6,
+          "mi": 92.3,
+          "antipatterns": 16
+        },
+        {
+          "name": "lb_statistics",
+          "loc": 196,
+          "ccn": 3.4,
+          "mi": 92.8,
+          "antipatterns": 21
+        },
+        {
+          "name": "openy_socrates",
+          "loc": 193,
+          "ccn": 2.6,
+          "mi": 93.9,
+          "antipatterns": 14
+        },
+        {
+          "name": "openy_hours_formatter",
+          "loc": 188,
+          "ccn": 4.5,
+          "mi": 79,
+          "antipatterns": 28
+        },
+        {
+          "name": "lb_carousel",
+          "loc": 186,
+          "ccn": 2.6,
+          "mi": 93.6,
+          "antipatterns": 21
+        },
+        {
+          "name": "ws_media_entity_document",
+          "loc": 172,
+          "ccn": 2.4,
+          "mi": 97.4,
+          "antipatterns": 14
+        },
+        {
+          "name": "ws_lb_tabs",
+          "loc": 162,
+          "ccn": 3.4,
+          "mi": 90.4,
+          "antipatterns": 19
+        },
+        {
+          "name": "openy_er",
+          "loc": 146,
+          "ccn": 3,
+          "mi": 92.8,
+          "antipatterns": 18
+        },
+        {
+          "name": "lb_partners_blocks",
+          "loc": 141,
+          "ccn": 3.4,
+          "mi": 93.9,
+          "antipatterns": 8
+        },
+        {
+          "name": "lb_claro",
+          "loc": 130,
+          "ccn": 3,
+          "mi": 92.1,
+          "antipatterns": 15
+        },
+        {
+          "name": "y_lb_demo_content",
+          "loc": 127,
+          "ccn": 1.9,
+          "mi": 99.8,
+          "antipatterns": 9
+        },
+        {
+          "name": "y_branch_menu",
+          "loc": 120,
+          "ccn": 2.6,
+          "mi": 96,
+          "antipatterns": 15
+        },
+        {
+          "name": "lb_staff_members_blocks",
+          "loc": 119,
+          "ccn": 3.4,
+          "mi": 91.8,
+          "antipatterns": 13
+        },
+        {
+          "name": "lb_branch_amenities_blocks",
+          "loc": 105,
+          "ccn": 5,
+          "mi": 89,
+          "antipatterns": 13
+        },
+        {
+          "name": "useless_machines",
+          "loc": 92,
+          "ccn": 1,
+          "mi": 100,
+          "antipatterns": 23
+        },
+        {
+          "name": "lb_ping_pong",
+          "loc": 90,
+          "ccn": 2.7,
+          "mi": 98.2,
+          "antipatterns": 8
+        },
+        {
+          "name": "lb_testimonial_blocks",
+          "loc": 90,
+          "ccn": 3.1,
+          "mi": 98.7,
+          "antipatterns": 8
+        },
+        {
+          "name": "ws_colorway_canada",
+          "loc": 90,
+          "ccn": 1.5,
+          "mi": 99.5,
+          "antipatterns": 12
+        },
+        {
+          "name": "openy_autocomplete_path",
+          "loc": 89,
+          "ccn": 2.7,
+          "mi": 90.7,
+          "antipatterns": 2
+        },
+        {
+          "name": "lb_simple_menu",
+          "loc": 78,
+          "ccn": 3.5,
+          "mi": 98.1,
+          "antipatterns": 7
+        },
+        {
+          "name": "lb_promo",
+          "loc": 77,
+          "ccn": 2.7,
+          "mi": 98.4,
+          "antipatterns": 5
+        },
+        {
+          "name": "openy_gtranslate",
+          "loc": 72,
+          "ccn": 2.5,
+          "mi": 96.3,
+          "antipatterns": 17
+        },
+        {
+          "name": "lb_table",
+          "loc": 47,
+          "ccn": 2,
+          "mi": 100,
+          "antipatterns": 4
+        },
+        {
+          "name": "openy_prgf_session_table",
+          "loc": 36,
+          "ccn": 2.7,
+          "mi": 96.9,
+          "antipatterns": 2
+        },
+        {
+          "name": "lb_modal",
+          "loc": 35,
+          "ccn": 1.3,
+          "mi": 100,
+          "antipatterns": 3
+        },
+        {
+          "name": "openy_branch_selector",
+          "loc": 30,
+          "ccn": 2.5,
+          "mi": 96.9,
+          "antipatterns": 14
+        },
+        {
+          "name": "lb_webform",
+          "loc": 25,
+          "ccn": 1,
+          "mi": 100,
+          "antipatterns": 1
+        },
+        {
+          "name": "lb_branch_social_links_blocks",
+          "loc": 25,
+          "ccn": 1.3,
+          "mi": 100,
+          "antipatterns": 4
+        }
       ]
     }
   ],
@@ -54349,7 +54862,7 @@
       "message": "feat(openy_media_image): Add hook_update_10004 for edit_link on existing sites",
       "date": "Jan 07, 2026",
       "lines": 25,
-      "type": "Unknown",
+      "type": "Feature",
       "repo": "open-y-subprojects_openy_features"
     },
     {
@@ -54421,7 +54934,7 @@
       "message": "feat(openy_media): Add edit link extra field for media library view mode",
       "date": "Jan 05, 2026",
       "lines": 92,
-      "type": "Unknown",
+      "type": "Feature",
       "repo": "open-y-subprojects_openy_features"
     },
     {
@@ -54461,7 +54974,7 @@
       "message": "fix(openy_media_image): Add media_library view display for image thumbnails",
       "date": "Dec 30, 2025",
       "lines": 78,
-      "type": "Unknown",
+      "type": "Bug",
       "repo": "open-y-subprojects_openy_features"
     },
     {
@@ -54589,7 +55102,7 @@
       "message": "feat(ITCR-1084): Update composer.json dependencies for major version bumps",
       "date": "Dec 18, 2025",
       "lines": 10,
-      "type": "Unknown",
+      "type": "Feature",
       "repo": "YCloudYUSA_y_lb_demo_content"
     },
     {
@@ -55389,7 +55902,7 @@
       "message": "feat(ITCR-1084): remove entity_browser and media_directories from composer",
       "date": "Dec 11, 2025",
       "lines": 117,
-      "type": "Unknown",
+      "type": "Feature",
       "repo": "YCloudYUSA_yusaopeny"
     },
     {
@@ -55405,7 +55918,7 @@
       "message": "fix(openy_media): remove all entity_browser config dependencies",
       "date": "Dec 11, 2025",
       "lines": 1861,
-      "type": "Unknown",
+      "type": "Bug",
       "repo": "open-y-subprojects_openy_features"
     },
     {
@@ -55413,7 +55926,7 @@
       "message": "fix(openy_media_image): remove entity_browser config dependencies",
       "date": "Dec 11, 2025",
       "lines": 659,
-      "type": "Unknown",
+      "type": "Bug",
       "repo": "open-y-subprojects_openy_features"
     },
     {

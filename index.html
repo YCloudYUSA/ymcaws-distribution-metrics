@@ -75,7 +75,7 @@
         <header>
             <h1>YMCA Website Services - Distribution Metrics</h1>
             <p class="header-meta" id="last-updated">Loading...</p>
-            <p class="executive-summary">The charts below track code quality across the YMCA Website Services Drupal distribution.</p>
+            <p class="executive-summary">The charts below track code quality across the YMCA Website Services distribution ecosystem.</p>
             <p class="executive-summary">This dashboard monitors the yusaopeny profile, y_lb (Layout Builder), Activity Finder, and related modules. Metrics include complexity, maintainability, anti-patterns, and API surface area across the distribution ecosystem.</p>
             <p class="executive-summary">By tracking these metrics, we aim to maintain high code quality standards and inform architectural decisions.</p>
         </header>
@@ -376,11 +376,10 @@
             };
 
             const makeRow = (hotspot, index) => {
-                const gitlabUrl = hotspot.file ? `https://git.drupalcode.org/project/drupal/-/blob/HEAD/core/${hotspot.file}` : '#';
                 return `
                     <tr>
                         <td>${index + 1}</td>
-                        <td class="class-name"><a href="${gitlabUrl}" title="${escapeHtml(hotspot.file)}">${escapeHtml(hotspot.name)}</a></td>
+                        <td class="class-name" title="${escapeHtml(hotspot.file)}">${escapeHtml(hotspot.name)}</td>
                         <td class="${hotspot.ccn > 50 ? 'metric-bad' : hotspot.ccn > 20 ? 'metric-warning' : ''}">${hotspot.ccn}</td>
                         <td class="${hotspot.mi < 50 ? 'metric-bad' : hotspot.mi < 80 ? 'metric-warning' : 'metric-good'}">${hotspot.mi}</td>
                         <td class="${hotspot.antipatterns > 20 ? 'metric-bad' : hotspot.antipatterns > 10 ? 'metric-warning' : ''}">${hotspot.antipatterns || '—'}</td>
@@ -463,21 +462,14 @@
             };
 
             const makeRow = (commit) => {
-                // CCN: positive = more complexity = worse (red)
-                // MI: positive = improved maintainability = better (green)
-                const ccnClass = commit.ccnDelta > 0 ? 'metric-bad' : (commit.ccnDelta < 0 ? 'metric-good' : '');
-                const miClass = commit.miDelta < 0 ? 'metric-bad' : (commit.miDelta > 0 ? 'metric-good' : '');
-                const antipatternClass = commit.antipatternsDelta > 0 ? 'metric-bad' : (commit.antipatternsDelta < 0 ? 'metric-good' : '');
                 return `
                     <tr>
-                        <td><a href="https://git.drupalcode.org/project/drupal/-/commit/${commit.hash}"><code>${commit.hash}</code></a></td>
+                        <td><code title="${commit.repo || ''}">${commit.hash.substring(0, 7)}</code></td>
                         <td>${commit.date}</td>
                         <td>${commit.type}</td>
                         <td>${escapeHtml(commit.message)}</td>
-                        <td>${formatDelta(commit.locDelta)}</td>
-                        <td class="${ccnClass}">${formatDelta(commit.ccnDelta)}</td>
-                        <td class="${miClass}">${formatDelta(commit.miDelta)}</td>
-                        <td class="${antipatternClass}">${formatDelta(commit.antipatternsDelta)}</td>
+                        <td>${commit.lines || 0}</td>
+                        <td>${commit.repo ? escapeHtml(commit.repo.replace(/^(YCloudYUSA_|open-y-subprojects_|drupal_)/, '')) : '—'}</td>
                     </tr>
                 `;
             };
@@ -488,9 +480,9 @@
 
             section.innerHTML = `
                 <h2>Recent commits</h2>
-                <p class="section-subtitle">Commits that changed code quality metrics. Green = improved, red = worsened.</p>
+                <p class="section-subtitle">Recent commits across all YMCA Website Services repositories (last 365 days).</p>
                 <table class="hotspots-table">
-                    <thead><tr><th>Commit</th><th>Date</th><th>Type</th><th>Message</th><th>LOC Δ</th><th>CCN Δ</th><th>MI Δ</th><th>Anti-patterns Δ</th></tr></thead>
+                    <thead><tr><th>Commit</th><th>Date</th><th>Type</th><th>Message</th><th>Lines</th><th>Repository</th></tr></thead>
                     <tbody id="commits-tbody">${initialRows}</tbody>
                 </table>
                 ${toggleButton}
@@ -518,12 +510,12 @@
 
             const section = document.createElement('div');
             section.className = 'card';
-            section.innerHTML = `<h2>Drupal anti-patterns</h2>
+            section.innerHTML = `<h2>Code anti-patterns</h2>
                 <p class="section-subtitle">Code patterns with known downsides. Shows how often these patterns appear per 1,000 lines of code (density). PHP production code only; excludes tests and vendor dependencies.</p>
                 <ul class="metric-list">
-                    <li><strong>Magic keys</strong>: #-prefixed array keys require memorization and lack IDE support. Inherent to Drupal's render array architecture.</li>
+                    <li><strong>Magic keys</strong>: #-prefixed array keys require memorization and lack IDE support. Common in render arrays.</li>
                     <li><strong>Deep arrays</strong>: arrays nested 3+ levels deep are hard to read and refactor.</li>
-                    <li><strong>Service locators</strong>: <code>\\Drupal::service()</code> calls hide dependencies and hinder testing.</li>
+                    <li><strong>Service locators</strong>: <code>\\Drupal::service()</code> calls hide dependencies and hinder testing. Prefer dependency injection.</li>
                 </ul>
                 <div class="chart-container"><canvas></canvas></div>`;
             container.appendChild(section);
@@ -599,9 +591,8 @@
             const section = document.createElement('div');
             section.className = 'card';
             section.innerHTML = `<h2>API surface area</h2>
-                <p class="section-subtitle">The chart tracks distinct extension points in Drupal Core over time. PHP production code only; excludes tests and vendor dependencies.</p>
-                <p class="section-subtitle">Since Drupal 7, Drupal Core has added functionality (like Views), removed features, and consolidated competing APIs into shared solutions (like Single Directory Components). Because the functionality changed, the trend doesn't tell you whether Drupal has become easier or harder to learn.</p>
-                <p class="section-subtitle">The chart does show how Drupal's architecture has evolved, from procedural (global functions) to object-oriented (interface methods, services, plugins, and events). It also shows the types of extension points developers need to learn, and the API surface that Drupal Core Maintainers are responsible for.</p>
+                <p class="section-subtitle">The chart tracks distinct extension points across the YMCA Website Services distribution. PHP production code only; excludes tests and vendor dependencies.</p>
+                <p class="section-subtitle">This shows the types of extension points (hooks, services, plugins, events) that the distribution provides and that developers need to learn when customizing YMCA sites.</p>
                 <div class="chart-container"><canvas></canvas></div>`;
             container.appendChild(section);
 
@@ -794,8 +785,8 @@
             const section = document.createElement('div');
             section.className = 'card';
             section.innerHTML = `<h2>Features vs tasks vs bugs</h2>
-                <p class="section-subtitle">Tasks include both maintenance work (documentation, tests, CI, refactoring) and innovation (smaller enhancements, new feature follow-ups). Healthy mature projects allocate 20-40% to features; a lower ratio reflects a focus on stability and reliability, while below 20% introduces the risk of becoming obsolete.</p>
-                <p class="section-subtitle">Note: these numbers undercount feature development because much of it happens across multiple commits (classified as tasks or bug fixes) and in external repositories before experimental modules are added to Core. Drupal's architecture also encourages innovation in contributed modules, so Core's ratio tells only part of the story.</p>
+                <p class="section-subtitle">Commit type distribution based on <a href="https://www.conventionalcommits.org/">Conventional Commits</a> prefixes. Tasks include maintenance work (docs, tests, CI, refactoring). Healthy mature projects allocate 20-40% to features.</p>
+                <p class="section-subtitle">Note: "Unknown" commits don't follow conventional commit format. Consider adopting conventional commits for better tracking.</p>
                 <div class="chart-container"><canvas></canvas></div>`;
             container.appendChild(section);
 
@@ -936,6 +927,122 @@
             });
         }
 
+        function createPerRepoChart(container, snapshots) {
+            // Find the most recent snapshot with perRepo data
+            const snapshotWithPerRepo = snapshots.find(s => s.perRepo && s.perRepo.length > 0);
+            if (!snapshotWithPerRepo) return;
+
+            const perRepo = snapshotWithPerRepo.perRepo;
+            // Show top 20 repos by LOC
+            const topRepos = perRepo.slice(0, 20);
+
+            const section = document.createElement('div');
+            section.className = 'card';
+            section.innerHTML = `<h2>Lines of code by repository</h2>
+                <p class="section-subtitle">Top 20 repositories by lines of code in the current snapshot. Hover for details.</p>
+                <div class="chart-container" style="height: 400px;"><canvas></canvas></div>`;
+            container.appendChild(section);
+
+            const context = section.querySelector('canvas').getContext('2d');
+
+            new Chart(context, {
+                type: 'bar',
+                data: {
+                    labels: topRepos.map(r => r.name),
+                    datasets: [{
+                        label: 'Lines of code',
+                        data: topRepos.map(r => r.loc),
+                        backgroundColor: '#3b82f6',
+                        borderColor: '#2563eb',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                            padding: 12,
+                            callbacks: {
+                                afterLabel: (tooltipContext) => {
+                                    const repo = topRepos[tooltipContext.dataIndex];
+                                    return [
+                                        `CCN avg: ${repo.ccn?.toFixed(1) || '—'}`,
+                                        `MI avg: ${repo.mi?.toFixed(1) || '—'}`,
+                                        `Anti-patterns: ${repo.antipatterns || 0}`
+                                    ];
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            title: { display: true, text: 'Lines of code' }
+                        },
+                        y: {
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderPerRepoTable(container, snapshots) {
+            // Find the most recent snapshot with perRepo data
+            const snapshotWithPerRepo = snapshots.find(s => s.perRepo && s.perRepo.length > 0);
+            if (!snapshotWithPerRepo) return;
+
+            const perRepo = snapshotWithPerRepo.perRepo;
+            const initialShow = 15;
+            let expanded = false;
+
+            const makeRow = (repo, index) => {
+                const ccnClass = repo.ccn > 10 ? 'metric-bad' : repo.ccn > 6 ? 'metric-warning' : 'metric-good';
+                const miClass = repo.mi < 65 ? 'metric-bad' : repo.mi < 85 ? 'metric-warning' : 'metric-good';
+                return `
+                    <tr>
+                        <td>${index + 1}</td>
+                        <td class="class-name">${escapeHtml(repo.name)}</td>
+                        <td>${repo.loc.toLocaleString()}</td>
+                        <td class="${ccnClass}">${repo.ccn?.toFixed(1) || '—'}</td>
+                        <td class="${miClass}">${repo.mi?.toFixed(1) || '—'}</td>
+                        <td>${repo.antipatterns || 0}</td>
+                    </tr>
+                `;
+            };
+
+            const section = document.createElement('div');
+            section.className = 'card';
+            section.innerHTML = `
+                <h2>Repository metrics</h2>
+                <p class="section-subtitle">Code quality metrics per repository. CCN (Cyclomatic Complexity): green &lt;6, yellow 6-10, red &gt;10. MI (Maintainability Index): green &gt;85, yellow 65-85, red &lt;65.</p>
+                <table class="hotspots-table">
+                    <thead><tr><th>#</th><th>Repository</th><th>LOC</th><th>CCN avg</th><th>MI avg</th><th>Anti-patterns</th></tr></thead>
+                    <tbody id="per-repo-tbody">${perRepo.slice(0, initialShow).map(makeRow).join('')}</tbody>
+                </table>
+                ${perRepo.length > initialShow ? `<button id="toggle-per-repo" class="toggle-button">Show all ${perRepo.length} repositories</button>` : ''}
+            `;
+            container.appendChild(section);
+
+            if (perRepo.length > initialShow) {
+                document.getElementById('toggle-per-repo').addEventListener('click', function() {
+                    const tableBody = document.getElementById('per-repo-tbody');
+                    expanded = !expanded;
+                    if (expanded) {
+                        tableBody.innerHTML = perRepo.map(makeRow).join('');
+                        this.textContent = 'Show fewer repositories';
+                    } else {
+                        tableBody.innerHTML = perRepo.slice(0, initialShow).map(makeRow).join('');
+                        this.textContent = `Show all ${perRepo.length} repositories`;
+                    }
+                });
+            }
+        }
+
         function renderDashboard(data) {
             const container = document.getElementById('dashboard');
             container.innerHTML = '';
@@ -947,7 +1054,9 @@
 
             data.snapshots.sort((a, b) => b.date.localeCompare(a.date));
 
-            createLocChart(container, data.snapshots, 'Lines of code', 'Drupal Core is a large codebase, too big for any one person to fully understand, but manageable for a healthy community. For scale, Kubernetes is about 10x larger and the Linux kernel about 75x. A healthy test-to-production ratio is 1:1 or higher, and Drupal far exceeds this. Measures non-blank, non-comment lines (SLOC). PHP code only; excludes vendor dependencies.');
+            createLocChart(container, data.snapshots, 'Lines of code', 'Total lines of code across the YMCA Website Services distribution ecosystem. A healthy test-to-production ratio is 1:1 or higher. Measures non-blank, non-comment lines (SLOC). PHP code only; excludes vendor dependencies.');
+            createPerRepoChart(container, data.snapshots);
+            renderPerRepoTable(container, data.snapshots);
             createCcnChart(container, data.snapshots);
             createMiChart(container, data.snapshots);
             createAntiPatternsChart(container, data.snapshots);
