@@ -9,6 +9,7 @@ Supports multi-repo analysis from repos_config.json.
 """
 
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -41,6 +42,11 @@ def log_error(message: str):
     print(f"{Colors.RED}[ERROR]{Colors.NC} {message}", flush=True)
 
 
+def log_debug(message: str):
+    if os.environ.get("DEBUG"):
+        print(f"[DEBUG] {message}", flush=True)
+
+
 def run_command(cmd: list[str], cwd: Optional[str] = None, capture: bool = True) -> tuple[int, str, str]:
     """Run a shell command and return (returncode, stdout, stderr)."""
     try:
@@ -71,6 +77,34 @@ def load_config(project_dir: Path) -> dict:
 def get_repo_url(org: str, repo: str) -> str:
     """Get GitHub repo URL."""
     return f"https://github.com/{org}/{repo}.git"
+
+
+def get_drupal_org_repo_url(module: str) -> str:
+    """Get drupal.org GitLab repo URL."""
+    return f"https://git.drupalcode.org/project/{module}.git"
+
+
+def setup_drupal_org_repo(repos_dir: Path, module: str) -> Optional[Path]:
+    """Clone or update a drupal.org repository."""
+    repo_dir = repos_dir / f"drupal_{module}"
+    repo_url = get_drupal_org_repo_url(module)
+
+    if repo_dir.exists():
+        log_info(f"Updating drupal.org/{module}...")
+        code, _, err = run_command(["git", "fetch", "origin", "--tags"], cwd=str(repo_dir))
+        if code != 0:
+            log_warn(f"Failed to fetch drupal.org/{module}: {err}")
+            return None
+        code, head_ref, _ = run_command(["git", "symbolic-ref", "HEAD"], cwd=str(repo_dir))
+        if code == 0:
+            run_command(["git", "update-ref", head_ref.strip(), "FETCH_HEAD"], cwd=str(repo_dir))
+    else:
+        log_info(f"Cloning drupal.org/{module}...")
+        code, _, err = run_command(["git", "clone", "--bare", repo_url, str(repo_dir)])
+        if code != 0:
+            log_warn(f"Failed to clone drupal.org/{module}: {err}")
+            return None
+    return repo_dir
 
 
 def setup_repo(repos_dir: Path, org: str, repo: str) -> Optional[Path]:
@@ -271,7 +305,10 @@ def analyze_directory(work_dir: Path, php_script: Path) -> Optional[dict]:
     # Find PHP files to analyze
     php_files = list(work_dir.rglob("*.php")) + list(work_dir.rglob("*.module")) + list(work_dir.rglob("*.inc"))
     if not php_files:
+        log_debug(f"No PHP files found in {work_dir}")
         return None
+
+    log_debug(f"Found {len(php_files)} PHP files to analyze")
 
     try:
         result = subprocess.run(
@@ -281,15 +318,26 @@ def analyze_directory(work_dir: Path, php_script: Path) -> Optional[dict]:
             timeout=600
         )
         if result.returncode != 0:
+            log_debug(f"PHP analysis failed: {result.stderr[:500]}")
             return None
 
-        return json.loads(result.stdout)
-    except Exception:
+        if not result.stdout.strip():
+            log_debug("PHP analysis returned empty output")
+            return None
+
+        data = json.loads(result.stdout)
+        log_debug(f"PHP analysis returned data with keys: {list(data.keys())}")
+        return data
+    except json.JSONDecodeError as e:
+        log_debug(f"JSON decode error: {e}")
+        return None
+    except Exception as e:
+        log_debug(f"Exception during analysis: {e}")
         return None
 
 
 def analyze_version(repo_dirs: list[Path], year_month: str, output_dir: Path,
-                    current: int = 0, total: int = 0) -> Optional[dict]:
+                    php_script: Path, current: int = 0, total: int = 0) -> Optional[dict]:
     """Analyze a specific point in time across all repos."""
     work_dir = output_dir / "work"
     if work_dir.exists():
@@ -301,6 +349,7 @@ def analyze_version(repo_dirs: list[Path], year_month: str, output_dir: Path,
 
     target_date = f"{year_month}-15"  # Mid-month
     exported_any = False
+    exported_repos = []
 
     for repo_dir in repo_dirs:
         commit = get_commit_for_date(repo_dir, target_date)
@@ -308,17 +357,17 @@ def analyze_version(repo_dirs: list[Path], year_month: str, output_dir: Path,
             repo_name = repo_dir.name
             if export_version(repo_dir, commit, work_dir, repo_name):
                 exported_any = True
+                exported_repos.append(repo_name)
 
     if not exported_any:
         log_warn(f"No repos exported for {year_month}")
         return None
 
-    scripts_dir = Path(__file__).parent
-    php_script = scripts_dir / "drupalisms.php"
+    log_debug(f"Exported {len(exported_repos)} repos for {year_month}")
 
     data = analyze_directory(work_dir, php_script)
     if not data:
-        log_warn(f"Analysis failed for {year_month}")
+        log_warn(f"Analysis returned no data for {year_month}")
         return None
 
     return {
@@ -333,8 +382,35 @@ def analyze_version(repo_dirs: list[Path], year_month: str, output_dir: Path,
     }
 
 
+def find_project_dir() -> Path:
+    """Find the project directory regardless of where script is run from."""
+    # Try relative to script location first
+    script_dir = Path(__file__).parent.resolve()
+    project_dir = script_dir.parent
+
+    if (project_dir / "repos_config.json").exists():
+        return project_dir
+
+    # If running from DDEV, check common mount points
+    for possible_path in [Path("/var/www/html"), Path.cwd()]:
+        if (possible_path / "repos_config.json").exists():
+            return possible_path
+
+    log_error("Could not find project directory with repos_config.json")
+    sys.exit(1)
+
+
 def main():
-    project_dir = Path(__file__).parent.parent.resolve()
+    project_dir = find_project_dir()
+    log_info(f"Project directory: {project_dir}")
+
+    scripts_dir = project_dir / "scripts"
+    php_script = scripts_dir / "drupalisms.php"
+
+    if not php_script.exists():
+        log_error(f"PHP script not found: {php_script}")
+        sys.exit(1)
+
     repos_dir = project_dir / "repos"
     output_dir = project_dir / "output"
     data_file = project_dir / "data.json"
@@ -348,18 +424,26 @@ def main():
     repos_dir.mkdir(exist_ok=True)
     output_dir.mkdir(exist_ok=True)
 
-    # Get primary repos to analyze
+    # Get ALL YMCA repos to analyze
     github_repos = config.get("github_repos_to_analyze", [])
-    primary_repos = [r for r in github_repos if r.get("primary", False) and r.get("ymca", True)]
+    ymca_github_repos = [r for r in github_repos if r.get("ymca", True)]
+    drupal_org_modules = config.get("drupal_org_ymca_modules", [])
 
-    log_info(f"Found {len(primary_repos)} primary repos to analyze")
+    total_repos = len(ymca_github_repos) + len(drupal_org_modules)
+    log_info(f"Found {total_repos} YMCA repos to analyze ({len(ymca_github_repos)} GitHub + {len(drupal_org_modules)} drupal.org)")
 
-    # Clone/update repos
+    # Clone/update GitHub repos
     repo_dirs = []
-    for repo_config in primary_repos:
+    for repo_config in ymca_github_repos:
         org = repo_config["org"]
         repo = repo_config["repo"]
         repo_dir = setup_repo(repos_dir, org, repo)
+        if repo_dir:
+            repo_dirs.append(repo_dir)
+
+    # Clone/update drupal.org repos
+    for module in drupal_org_modules:
+        repo_dir = setup_drupal_org_repo(repos_dir, module)
         if repo_dir:
             repo_dirs.append(repo_dir)
 
@@ -387,15 +471,16 @@ def main():
     snapshots = []
     for i, target in enumerate(snapshot_dates, 1):
         year_month = target.strftime("%Y-%m")
-        result = analyze_version(repo_dirs, year_month, output_dir, i, total)
+        result = analyze_version(repo_dirs, year_month, output_dir, php_script, i, total)
         if result:
             snapshots.append(result)
+            log_debug(f"Snapshot {year_month} added, total snapshots: {len(snapshots)}")
 
     # Analyze current HEAD
     log_info("Analyzing current HEAD...")
     current_date = datetime.now().strftime("%Y-%m")
     if not snapshots or snapshots[-1]["date"] != current_date:
-        result = analyze_version(repo_dirs, current_date, output_dir)
+        result = analyze_version(repo_dirs, current_date, output_dir, php_script)
         if result:
             snapshots.append(result)
 
@@ -403,6 +488,8 @@ def main():
     work_dir = output_dir / "work"
     if work_dir.exists():
         shutil.rmtree(work_dir)
+
+    log_info(f"Collected {len(snapshots)} snapshots with data")
 
     # Get commit statistics
     commits = get_recent_commits(repo_dirs, days=365)
@@ -425,12 +512,36 @@ def main():
         "commitsPerYear": commitsPerYear,
     }
 
+    # Verify data before saving
+    if not snapshots:
+        log_error("No snapshots collected! Check if PHP analysis is working.")
+        log_info("Saving partial data anyway...")
+
     # Save results
-    with open(data_file, "w") as f:
-        json.dump(data, f, indent=2)
+    try:
+        log_info(f"Saving data to {data_file}...")
+        json_str = json.dumps(data, indent=2, ensure_ascii=False)
+        log_info(f"JSON serialization successful, {len(json_str)} characters")
+
+        with open(data_file, "w", encoding="utf-8") as f:
+            f.write(json_str)
+
+        # Verify the file was written
+        actual_size = data_file.stat().st_size
+        log_info(f"Data saved to: {data_file} ({actual_size} bytes)")
+
+        if actual_size == 0:
+            log_error("File was written but is empty!")
+        elif actual_size < 1000:
+            log_warn(f"File seems small. Content preview: {json_str[:500]}")
+
+    except Exception as e:
+        log_error(f"Failed to save data: {e}")
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)
 
     log_info(f"Analysis complete! Processed {len(snapshots)} snapshots.")
-    log_info(f"Data saved to: {data_file}")
 
 
 if __name__ == "__main__":
