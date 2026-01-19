@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-12T03:01:18.585033",
+  "generated": "2026-01-19T03:01:36.835574",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -1072,11 +1072,11 @@
     },
     {
       "date": "2026-01",
-      "total": 35,
-      "features": 2,
-      "bugs": 5,
-      "maintenance": 18,
-      "unknown": 10
+      "total": 56,
+      "features": 3,
+      "bugs": 7,
+      "maintenance": 26,
+      "unknown": 20
     }
   ],
   "snapshots": [
@@ -44857,8 +44857,8 @@
       "date": "2026-01",
       "commit": "multi",
       "production": {
-        "loc": 95043,
-        "functions": 5740,
+        "loc": 95048,
+        "functions": 5741,
         "ccn": {
           "avg": 2.5,
           "p95": 8
@@ -45549,7 +45549,7 @@
       "antipatterns": {
         "magicKeys": 4565,
         "deepArrays": 2714,
-        "serviceLocators": 2856
+        "serviceLocators": 2858
       },
       "hotspots": [
         {
@@ -45998,10 +45998,10 @@
         },
         {
           "name": "yusaopeny",
-          "loc": 2715,
+          "loc": 2720,
           "ccn": 2.4,
           "mi": 82.8,
-          "antipatterns": 564
+          "antipatterns": 566
         },
         {
           "name": "openy_activity_finder",
@@ -46469,6 +46469,126 @@
     }
   ],
   "commits": [
+    {
+      "hash": "a96304c92d79db918bda51d95ebb9c134310734e",
+      "message": "Remove !important from table cell padding",
+      "date": "Jan 16, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_y_lb"
+    },
+    {
+      "hash": "307499c8d42b31e46fdd02bc7261b037c964cd20",
+      "message": "feat(ITCR-1107): Add global table styles for CKEditor content",
+      "date": "Jan 16, 2026",
+      "lines": 79,
+      "type": "Feature",
+      "repo": "YCloudYUSA_y_lb"
+    },
+    {
+      "hash": "e83b91c66799dc0bbd5a6227c685c65216c2baff",
+      "message": "fix: Drupal 11 ConfigFormBase compatibility",
+      "date": "Jan 16, 2026",
+      "lines": 18,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny_ymca360"
+    },
+    {
+      "hash": "cef7658d0296cee34e4aea01e5df8c2679a8c12c",
+      "message": "docs: Add detailed technical specifications for Maximum Links field",
+      "date": "Jan 16, 2026",
+      "lines": 13,
+      "type": "Maintenance",
+      "repo": "YCloudYUSA_yusaopeny_docs"
+    },
+    {
+      "hash": "299457b71af456ca9a2a834c4806fb2cdc8948f7",
+      "message": "docs: Add y_branch_menu 1.1.1 Maximum Links feature documentation",
+      "date": "Jan 16, 2026",
+      "lines": 3,
+      "type": "Maintenance",
+      "repo": "YCloudYUSA_yusaopeny_docs"
+    },
+    {
+      "hash": "749af1dc180cf15d183835469d985cad4f1b13bf",
+      "message": "fix: use entity storage instead of config_import in update_10004",
+      "date": "Jan 16, 2026",
+      "lines": 94,
+      "type": "Bug",
+      "repo": "drupal_lb_hero"
+    },
+    {
+      "hash": "bde262777f26166ec75e90e0638829ab89c18c35",
+      "message": "[#3567822] fix: Add \"maximum links\" field to block form.",
+      "date": "Jan 16, 2026",
+      "lines": 11,
+      "type": "Unknown",
+      "repo": "drupal_y_branch_menu"
+    },
+    {
+      "hash": "bd2c0d9601b5c7284bb5daabf0644122f630e4b8",
+      "message": "Update version to 11.3.0.1-rc1",
+      "date": "Jan 15, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "9de7d8c885a177f160c4e036e80c4abc7b4b1ee8",
+      "message": "Add check if the module is enabled",
+      "date": "Jan 14, 2026",
+      "lines": 5,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "48b463eadd0b1c160c5934833af1ae3340355bb7",
+      "message": "Enable module trash",
+      "date": "Jan 14, 2026",
+      "lines": 11,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "fca0bd5f1aefaafde8031ddc377b8b63f7f0e114",
+      "message": "Add screenshots for documentation",
+      "date": "Jan 14, 2026",
+      "lines": 23,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny_docs"
+    },
+    {
+      "hash": "997962c67b985893e33d932a3164f5c4576b0f66",
+      "message": "Reorganize trash documentation to support images",
+      "date": "Jan 14, 2026",
+      "lines": 17,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny_docs"
+    },
+    {
+      "hash": "0474f6ad982700761e3a00d84642a05829afd6d0",
+      "message": "Enable Trash module in YUSAOpenY profile",
+      "date": "Jan 13, 2026",
+      "lines": 1,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "ab85bc60de7866052529f29a954ac4630eb4051f",
+      "message": "Add Trash module (drupal/trash:^3.0)",
+      "date": "Jan 13, 2026",
+      "lines": 1,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "3bb4e14f2be012a5320fa81b41ee9875ffff4b40",
+      "message": "Add Trash module user documentation",
+      "date": "Jan 13, 2026",
+      "lines": 195,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny_docs"
+    },
     {
       "hash": "5daa62a12d81847de8873e94921d063d1e11eb91",
       "message": "Add patch for Drupal #3492438 route rebuild optimization",
@@ -47948,126 +48068,6 @@
       "lines": 231,
       "type": "Feature",
       "repo": "YCloudYUSA_yusaopeny"
-    },
-    {
-      "hash": "08b198742431374bcd9f058b3266095c88c6b14f",
-      "message": "feat: improve media library CSS styling",
-      "date": "Dec 10, 2025",
-      "lines": 83,
-      "type": "Feature",
-      "repo": "YCloudYUSA_lb_claro"
-    },
-    {
-      "hash": "30c482da8946b21db638ea3ecd5c68201cb751ea",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 10, 2025",
-      "lines": 23,
-      "type": "Feature",
-      "repo": "open-y-subprojects_openy_focal_point"
-    },
-    {
-      "hash": "b1e7be892bd7b47ca488f2d38ee3137e6679af40",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 10, 2025",
-      "lines": 415,
-      "type": "Feature",
-      "repo": "drupal_lb_accordion"
-    },
-    {
-      "hash": "4d6bf7f7178ff0796bb4930e40792a5126413e63",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 10, 2025",
-      "lines": 219,
-      "type": "Feature",
-      "repo": "drupal_lb_carousel"
-    },
-    {
-      "hash": "ebb01cef8fc347bc99ff0734c8657af6dcfda63e",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 10, 2025",
-      "lines": 100,
-      "type": "Feature",
-      "repo": "drupal_lb_ping_pong"
-    },
-    {
-      "hash": "8e3134d6b31fcbdd00fca1c0886411bb2c448ab7",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 10, 2025",
-      "lines": 159,
-      "type": "Feature",
-      "repo": "drupal_lb_hero"
-    },
-    {
-      "hash": "b4cd9543b18979116ee7266d338fa28753256c5d",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 10, 2025",
-      "lines": 465,
-      "type": "Feature",
-      "repo": "drupal_lb_grid_cta"
-    },
-    {
-      "hash": "0e6491071f6addae38ceaef9be4ec10839783bf7",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 10, 2025",
-      "lines": 212,
-      "type": "Feature",
-      "repo": "drupal_lb_statistics"
-    },
-    {
-      "hash": "dc04a9fbab10892456cd2820a1ef34da004a87aa",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 10, 2025",
-      "lines": 84,
-      "type": "Feature",
-      "repo": "drupal_lb_simple_menu"
-    },
-    {
-      "hash": "169f089c93011ff17ba70ea62bb0919d5188b4b1",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 10, 2025",
-      "lines": 83,
-      "type": "Feature",
-      "repo": "drupal_lb_promo"
-    },
-    {
-      "hash": "cf4ba3102b6baf8faceb0109725205bbf4b77cfb",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 10, 2025",
-      "lines": 102,
-      "type": "Feature",
-      "repo": "drupal_lb_branch_amenities_blocks"
-    },
-    {
-      "hash": "8e2e91b7b1075f77973360c5b75ee9599df2b9af",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 10, 2025",
-      "lines": 67,
-      "type": "Feature",
-      "repo": "drupal_lb_testimonial_blocks"
-    },
-    {
-      "hash": "1ced3c3ae60989fca017ee29d29ff7f5180faea1",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 10, 2025",
-      "lines": 125,
-      "type": "Feature",
-      "repo": "drupal_lb_partners_blocks"
-    },
-    {
-      "hash": "2cfb3bb579b08fc4f8865a24edaafe4f2a7d0603",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 10, 2025",
-      "lines": 82,
-      "type": "Feature",
-      "repo": "drupal_lb_staff_members_blocks"
-    },
-    {
-      "hash": "9e66cb814838098298a21f039ea44371ccf01a6e",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 10, 2025",
-      "lines": 174,
-      "type": "Feature",
-      "repo": "drupal_ws_lb_tabs"
     }
   ],
   "commitsPerYear": [
@@ -48117,7 +48117,7 @@
     },
     {
       "year": 2026,
-      "commits": 35
+      "commits": 56
     }
   ]
 }
