@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-19T03:01:36.835574",
+  "generated": "2026-01-26T03:05:51.891947",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -1072,11 +1072,11 @@
     },
     {
       "date": "2026-01",
-      "total": 56,
+      "total": 67,
       "features": 3,
-      "bugs": 7,
-      "maintenance": 26,
-      "unknown": 20
+      "bugs": 10,
+      "maintenance": 30,
+      "unknown": 24
     }
   ],
   "snapshots": [
@@ -46470,6 +46470,54 @@
   ],
   "commits": [
     {
+      "hash": "76d3a4b8fc5e7d86164b34f05c9eefb3245605c7",
+      "message": "Add calculateDependencies() to post_update hook",
+      "date": "Jan 23, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny_gated_content"
+    },
+    {
+      "hash": "0ecd721ffc93a9227ab7486d846b165bbb7438fd",
+      "message": "fix: Migrate all entity_browser image/video fields to media_library",
+      "date": "Jan 23, 2026",
+      "lines": 515,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny_gated_content"
+    },
+    {
+      "hash": "0996ca11de3a1538e5a83cff388e883996e3ea28",
+      "message": "fix: Migrate gc_video media field from entity_browser to media_library",
+      "date": "Jan 22, 2026",
+      "lines": 60,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny_gated_content"
+    },
+    {
+      "hash": "b835c593fdf8beb4105c2e0b47c354c0efbed682",
+      "message": "Fix mermaid erDiagram syntax for Hugo compatibility",
+      "date": "Jan 22, 2026",
+      "lines": 68,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_openy_traction_rec"
+    },
+    {
+      "hash": "a28d5c65b95914fbfac0d1acf50f5bb1b0f37c17",
+      "message": "Fix double HTML encoding in include-remote-md shortcode",
+      "date": "Jan 22, 2026",
+      "lines": 4,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny_docs"
+    },
+    {
+      "hash": "185d893cab79cc1f48270a5f215f7a39c72a7461",
+      "message": "fix: CKEditor 5 balloon positioning in Layout Builder dialogs",
+      "date": "Jan 21, 2026",
+      "lines": 103,
+      "type": "Bug",
+      "repo": "YCloudYUSA_lb_claro"
+    },
+    {
       "hash": "a96304c92d79db918bda51d95ebb9c134310734e",
       "message": "Remove !important from table cell padding",
       "date": "Jan 16, 2026",
@@ -48020,54 +48068,6 @@
       "lines": 6,
       "type": "Feature",
       "repo": "drupal_ws_colorway_canada"
-    },
-    {
-      "hash": "ed96317b84d36ec12a41ee9628ffefc9ea80ed3a",
-      "message": "fix: restore original update hooks + add media_library migration",
-      "date": "Dec 11, 2025",
-      "lines": 191,
-      "type": "Bug",
-      "repo": "drupal_y_donate"
-    },
-    {
-      "hash": "a26cf87649596ea8f3642010976e1c4dede4ba76",
-      "message": "feat: update y_lb requirement to ^4.0 || ^5.0",
-      "date": "Dec 11, 2025",
-      "lines": 5,
-      "type": "Feature",
-      "repo": "drupal_y_facility"
-    },
-    {
-      "hash": "9f5b3485f69054a75da1cfe176e7fb012cd42da4",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 11, 2025",
-      "lines": 826,
-      "type": "Feature",
-      "repo": "drupal_y_camp"
-    },
-    {
-      "hash": "f95f1b44aca2c7ea3e1070b22a340d5dc695d69c",
-      "message": "feat: update y_lb requirement to ^4.0 || ^5.0",
-      "date": "Dec 11, 2025",
-      "lines": 6,
-      "type": "Feature",
-      "repo": "drupal_y_program"
-    },
-    {
-      "hash": "8b941fdde8fe8784bb3bbbd23b77dd34ed06e866",
-      "message": "feat: update y_lb requirement to ^4.0 || ^5.0",
-      "date": "Dec 11, 2025",
-      "lines": 6,
-      "type": "Feature",
-      "repo": "drupal_y_program_subcategory"
-    },
-    {
-      "hash": "f7034c19f03337d50d0f04df740536097feddea4",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 10, 2025",
-      "lines": 231,
-      "type": "Feature",
-      "repo": "YCloudYUSA_yusaopeny"
     }
   ],
   "commitsPerYear": [
@@ -48117,7 +48117,7 @@
     },
     {
       "year": 2026,
-      "commits": 56
+      "commits": 67
     }
   ]
 }
