@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-26T03:05:51.891947",
+  "generated": "2026-02-02T03:19:29.547374",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -1072,10 +1072,10 @@
     },
     {
       "date": "2026-01",
-      "total": 67,
-      "features": 3,
-      "bugs": 10,
-      "maintenance": 30,
+      "total": 77,
+      "features": 5,
+      "bugs": 13,
+      "maintenance": 35,
       "unknown": 24
     }
   ],
@@ -44854,11 +44854,11 @@
       ]
     },
     {
-      "date": "2026-01",
+      "date": "2026-02",
       "commit": "multi",
       "production": {
-        "loc": 95048,
-        "functions": 5741,
+        "loc": 95136,
+        "functions": 5742,
         "ccn": {
           "avg": 2.5,
           "p95": 8
@@ -45547,9 +45547,9 @@
         ]
       },
       "antipatterns": {
-        "magicKeys": 4565,
-        "deepArrays": 2714,
-        "serviceLocators": 2858
+        "magicKeys": 4571,
+        "deepArrays": 2715,
+        "serviceLocators": 2859
       },
       "hotspots": [
         {
@@ -45956,10 +45956,10 @@
       "perRepo": [
         {
           "name": "yusaopeny_gated_content",
-          "loc": 15684,
+          "loc": 15778,
           "ccn": 2.3,
           "mi": 86.5,
-          "antipatterns": 1774
+          "antipatterns": 1776
         },
         {
           "name": "openy_gated_content",
@@ -46068,7 +46068,7 @@
         },
         {
           "name": "yusaopeny_ymca360",
-          "loc": 1181,
+          "loc": 1187,
           "ccn": 1.7,
           "mi": 93,
           "antipatterns": 104
@@ -46270,13 +46270,6 @@
           "antipatterns": 29
         },
         {
-          "name": "lb_hero",
-          "loc": 211,
-          "ccn": 2.6,
-          "mi": 92.3,
-          "antipatterns": 16
-        },
-        {
           "name": "lb_statistics",
           "loc": 196,
           "ccn": 3.4,
@@ -46289,6 +46282,13 @@
           "ccn": 2.6,
           "mi": 93.9,
           "antipatterns": 14
+        },
+        {
+          "name": "lb_hero",
+          "loc": 190,
+          "ccn": 3,
+          "mi": 93.7,
+          "antipatterns": 16
         },
         {
           "name": "openy_hours_formatter",
@@ -46340,18 +46340,18 @@
           "antipatterns": 15
         },
         {
+          "name": "y_branch_menu",
+          "loc": 129,
+          "ccn": 2.7,
+          "mi": 94.1,
+          "antipatterns": 21
+        },
+        {
           "name": "y_lb_demo_content",
           "loc": 127,
           "ccn": 1.9,
           "mi": 99.8,
           "antipatterns": 9
-        },
-        {
-          "name": "y_branch_menu",
-          "loc": 120,
-          "ccn": 2.6,
-          "mi": 96,
-          "antipatterns": 15
         },
         {
           "name": "lb_staff_members_blocks",
@@ -46469,6 +46469,46 @@
     }
   ],
   "commits": [
+    {
+      "hash": "0f9feb9e42cb0d7a90d67e9a906e2eb3e7bd87a4",
+      "message": "fix: Add field_ls_media to entity_browser migration for live_stream events",
+      "date": "Jan 30, 2026",
+      "lines": 80,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny_gated_content"
+    },
+    {
+      "hash": "610768b37ec969bccfb4a75e5cf9d3a0b6f7a8f0",
+      "message": "fix(docs): remove quotes from erDiagram field types",
+      "date": "Jan 29, 2026",
+      "lines": 68,
+      "type": "Bug",
+      "repo": "YCloudYUSA_openy_traction_rec"
+    },
+    {
+      "hash": "fb37cafb647f631082456d9b9fab167ce30ef4d4",
+      "message": "fix(layouts): use lowercase 'hasmermaid' to match Docsy check",
+      "date": "Jan 29, 2026",
+      "lines": 2,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny_docs"
+    },
+    {
+      "hash": "54423fa34a1a2141404556019ed1e5a668851dd4",
+      "message": "feat(layouts): add render hook to fix Mermaid quote encoding",
+      "date": "Jan 29, 2026",
+      "lines": 6,
+      "type": "Feature",
+      "repo": "YCloudYUSA_yusaopeny_docs"
+    },
+    {
+      "hash": "af806babd9ed446733b2d5568a5a5a39ded1b02f",
+      "message": "feat(config): enable Mermaid diagrams rendering",
+      "date": "Jan 29, 2026",
+      "lines": 6,
+      "type": "Feature",
+      "repo": "YCloudYUSA_yusaopeny_docs"
+    },
     {
       "hash": "76d3a4b8fc5e7d86164b34f05c9eefb3245605c7",
       "message": "Add calculateDependencies() to post_update hook",
@@ -48028,46 +48068,6 @@
       "lines": 2,
       "type": "Unknown",
       "repo": "drupal_lb_theme_switcher"
-    },
-    {
-      "hash": "3e1a7109e530b8b9d34a58761c14e00644cf037b",
-      "message": "#3562413: Add Drupal 11 support",
-      "date": "Dec 11, 2025",
-      "lines": 14,
-      "type": "Unknown",
-      "repo": "drupal_lb_theme_switcher"
-    },
-    {
-      "hash": "c869f07141525483de26c8210d3695f99cba573d",
-      "message": "feat: add composer.json dependencies for inline_entity_form and y_lb",
-      "date": "Dec 11, 2025",
-      "lines": 6,
-      "type": "Feature",
-      "repo": "drupal_ws_lb_tabs"
-    },
-    {
-      "hash": "b66b6466ebbb586480905ef0527dd699a09f2457",
-      "message": "feat: add composer.json dependencies for inline_entity_form and y_lb",
-      "date": "Dec 11, 2025",
-      "lines": 6,
-      "type": "Feature",
-      "repo": "drupal_ws_lb_tabs"
-    },
-    {
-      "hash": "bc9dd0d45c9c528a229a69349666c45dbf0ee961",
-      "message": "feat: update y_lb requirement to ^4.0 || ^5.0",
-      "date": "Dec 11, 2025",
-      "lines": 6,
-      "type": "Feature",
-      "repo": "drupal_ws_promotion"
-    },
-    {
-      "hash": "5b6e46b44a5c0de64fd8fb6711b8849598dcf4eb",
-      "message": "feat: update y_lb requirement to ^4.0 || ^5.0",
-      "date": "Dec 11, 2025",
-      "lines": 6,
-      "type": "Feature",
-      "repo": "drupal_ws_colorway_canada"
     }
   ],
   "commitsPerYear": [
@@ -48117,7 +48117,7 @@
     },
     {
       "year": 2026,
-      "commits": 67
+      "commits": 77
     }
   ]
 }
