@@ -1,5 +1,5 @@
 {
-  "generated": "2026-02-02T03:19:29.547374",
+  "generated": "2026-02-09T03:19:19.254745",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -1077,6 +1077,14 @@
       "bugs": 13,
       "maintenance": 35,
       "unknown": 24
+    },
+    {
+      "date": "2026-02",
+      "total": 2,
+      "features": 0,
+      "bugs": 1,
+      "maintenance": 1,
+      "unknown": 0
     }
   ],
   "snapshots": [
@@ -44857,8 +44865,8 @@
       "date": "2026-02",
       "commit": "multi",
       "production": {
-        "loc": 95136,
-        "functions": 5742,
+        "loc": 95151,
+        "functions": 5743,
         "ccn": {
           "avg": 2.5,
           "p95": 8
@@ -45549,7 +45557,7 @@
       "antipatterns": {
         "magicKeys": 4571,
         "deepArrays": 2715,
-        "serviceLocators": 2859
+        "serviceLocators": 2860
       },
       "hotspots": [
         {
@@ -45956,10 +45964,10 @@
       "perRepo": [
         {
           "name": "yusaopeny_gated_content",
-          "loc": 15778,
+          "loc": 15793,
           "ccn": 2.3,
           "mi": 86.5,
-          "antipatterns": 1776
+          "antipatterns": 1777
         },
         {
           "name": "openy_gated_content",
@@ -46469,6 +46477,14 @@
     }
   ],
   "commits": [
+    {
+      "hash": "a4332cd6a77c80159cc2e047502ed0afae551fab",
+      "message": "fix: Add hook to fix media view browser_thumbnail image style",
+      "date": "Feb 02, 2026",
+      "lines": 27,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny_gated_content"
+    },
     {
       "hash": "0f9feb9e42cb0d7a90d67e9a906e2eb3e7bd87a4",
       "message": "fix: Add field_ls_media to entity_browser migration for live_stream events",
@@ -48060,14 +48076,6 @@
       "lines": 78,
       "type": "Bug",
       "repo": "drupal_lb_partners_blocks"
-    },
-    {
-      "hash": "b6d4d0ad1d083b0e22b19a3ec55b1d116a36f289",
-      "message": "[#3562720] Remove D10 support",
-      "date": "Dec 11, 2025",
-      "lines": 2,
-      "type": "Unknown",
-      "repo": "drupal_lb_theme_switcher"
     }
   ],
   "commitsPerYear": [
@@ -48117,7 +48125,7 @@
     },
     {
       "year": 2026,
-      "commits": 77
+      "commits": 79
     }
   ]
 }
