@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-02T03:15:24.491793",
+  "generated": "2026-03-09T03:17:45.392643",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -1080,11 +1080,19 @@
     },
     {
       "date": "2026-02",
-      "total": 66,
-      "features": 5,
+      "total": 68,
+      "features": 7,
       "bugs": 26,
       "maintenance": 26,
       "unknown": 9
+    },
+    {
+      "date": "2026-03",
+      "total": 38,
+      "features": 3,
+      "bugs": 13,
+      "maintenance": 12,
+      "unknown": 10
     }
   ],
   "snapshots": [
@@ -44862,8 +44870,8 @@
       "date": "2026-03",
       "commit": "multi",
       "production": {
-        "loc": 95307,
-        "functions": 5750,
+        "loc": 95414,
+        "functions": 5755,
         "ccn": {
           "avg": 2.5,
           "p95": 8
@@ -45555,7 +45563,7 @@
       "antipatterns": {
         "magicKeys": 4587,
         "deepArrays": 2715,
-        "serviceLocators": 2862
+        "serviceLocators": 2872
       },
       "hotspots": [
         {
@@ -45727,6 +45735,14 @@
           "antipatterns": 0
         },
         {
+          "name": "AlertManager::getAlerts",
+          "file": "open-y-subprojects_openy_node_alert/src/Service/AlertManager.php",
+          "ccn": 23,
+          "loc": 65,
+          "mi": 68,
+          "antipatterns": 4
+        },
+        {
           "name": "openy_post_update_migrate_media_directories_to_tags",
           "file": "YCloudYUSA_yusaopeny/openy.post_update.php",
           "ccn": 22,
@@ -45829,14 +45845,6 @@
           "loc": 57,
           "mi": 71,
           "antipatterns": 6
-        },
-        {
-          "name": "AlertManager::getAlerts",
-          "file": "open-y-subprojects_openy_node_alert/src/Service/AlertManager.php",
-          "ccn": 20,
-          "loc": 61,
-          "mi": 70,
-          "antipatterns": 4
         },
         {
           "name": "OpenyMemberships::getSummaryData",
@@ -45976,10 +45984,10 @@
         },
         {
           "name": "openy_features",
-          "loc": 10518,
+          "loc": 10534,
           "ccn": 2.6,
           "mi": 92.8,
-          "antipatterns": 1197
+          "antipatterns": 1200
         },
         {
           "name": "openy_custom",
@@ -46004,10 +46012,10 @@
         },
         {
           "name": "yusaopeny",
-          "loc": 2716,
+          "loc": 2732,
           "ccn": 2.4,
-          "mi": 82.8,
-          "antipatterns": 566
+          "mi": 82.9,
+          "antipatterns": 570
         },
         {
           "name": "openy_activity_finder",
@@ -46039,10 +46047,10 @@
         },
         {
           "name": "ws_small_y",
-          "loc": 1639,
-          "ccn": 2.5,
-          "mi": 96,
-          "antipatterns": 153
+          "loc": 1700,
+          "ccn": 2.6,
+          "mi": 95.2,
+          "antipatterns": 156
         },
         {
           "name": "openy_traction_rec",
@@ -46122,18 +46130,18 @@
           "antipatterns": 63
         },
         {
+          "name": "openy_node_alert",
+          "loc": 731,
+          "ccn": 3.2,
+          "mi": 88.2,
+          "antipatterns": 50
+        },
+        {
           "name": "openy_mappings",
           "loc": 728,
           "ccn": 1.6,
           "mi": 95.3,
           "antipatterns": 18
-        },
-        {
-          "name": "openy_node_alert",
-          "loc": 727,
-          "ccn": 3.1,
-          "mi": 88.5,
-          "antipatterns": 50
         },
         {
           "name": "openy_rose",
@@ -46200,9 +46208,9 @@
         },
         {
           "name": "y_donate",
-          "loc": 368,
-          "ccn": 3.4,
-          "mi": 84.2,
+          "loc": 372,
+          "ccn": 3.5,
+          "mi": 84.3,
           "antipatterns": 74
         },
         {
@@ -46276,6 +46284,13 @@
           "antipatterns": 29
         },
         {
+          "name": "lb_hero",
+          "loc": 196,
+          "ccn": 3,
+          "mi": 93.9,
+          "antipatterns": 16
+        },
+        {
           "name": "lb_statistics",
           "loc": 196,
           "ccn": 3.4,
@@ -46288,13 +46303,6 @@
           "ccn": 2.6,
           "mi": 93.9,
           "antipatterns": 14
-        },
-        {
-          "name": "lb_hero",
-          "loc": 190,
-          "ccn": 3,
-          "mi": 93.7,
-          "antipatterns": 16
         },
         {
           "name": "openy_hours_formatter",
@@ -46476,12 +46484,236 @@
   ],
   "commits": [
     {
+      "hash": "ea61c789a095c89b280d8beb7b92428395430aa2",
+      "message": "Update version to 11.3.1.2-dev",
+      "date": "Mar 06, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "776a40c284330f54922c2ecb769220e5ef932186",
+      "message": "Update version to 11.3.1.1",
+      "date": "Mar 06, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "0e3138b5d40c3d8fe8d4e776e0fdd8dbf8459797",
+      "message": "feat: add admin_toolbar performance patch for module install",
+      "date": "Mar 06, 2026",
+      "lines": 3,
+      "type": "Feature",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "e76b3a75f300f8be55f002a4cc63e8b4fdf6d3d5",
+      "message": "fix: remove duplicate recurring_events configs from openy_gc_storage",
+      "date": "Mar 06, 2026",
+      "lines": 111,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny_gated_content"
+    },
+    {
+      "hash": "33ad9ad565ff2bfe38c3a5b0446e217f5170fab7",
+      "message": "fix: use stable field_inheritance ^3.0.2, remove broken MR #25 patch",
+      "date": "Mar 06, 2026",
+      "lines": 7,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny_gated_content"
+    },
+    {
+      "hash": "45917e01a6e4cf8ae82066a8f6769ea3c8537190",
+      "message": "fix: remove entity_browser dependency, fix circular openy_gated_content dep",
+      "date": "Mar 06, 2026",
+      "lines": 72,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny_gated_content"
+    },
+    {
+      "hash": "4995e8d8179b4cefc3cd3cb1a26404193fb100ea",
+      "message": "fix: remove entity_browser dependency for Drupal 11 compatibility",
+      "date": "Mar 06, 2026",
+      "lines": 38,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny_memberships"
+    },
+    {
+      "hash": "9b9038bbaf5f0a4653cac59751cfdd80c7fb6a39",
+      "message": "fix: revert incorrect GroupEx Pro deprecation in migrate-to-lb guide",
+      "date": "Mar 06, 2026",
+      "lines": 2,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny_docs"
+    },
+    {
+      "hash": "8b74251e3bbd0175cba18eb3a03e7cb6a8a1619b",
+      "message": "fix: revert incorrect deprecation of active GroupEx Pro components",
+      "date": "Mar 06, 2026",
+      "lines": 10,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny_docs"
+    },
+    {
+      "hash": "f2421122bf27a76ebc1c01d1861d3b016a1be299",
+      "message": "Update documentation for YMCA Website Services 11.3.1.0 release",
+      "date": "Mar 06, 2026",
+      "lines": 346,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny_docs"
+    },
+    {
+      "hash": "3a8d0b1d0c93d7038dee1c2f018d04fe9aab4092",
+      "message": "fix: move duplicate config from openy_node install to optional",
+      "date": "Mar 06, 2026",
+      "lines": 0,
+      "type": "Bug",
+      "repo": "open-y-subprojects_openy_features"
+    },
+    {
+      "hash": "97bca2030ab8acb4be2afc5328848e09359e3196",
+      "message": "fix: Auto-populate block info from field_title on presave to prevent fatal TypeE",
+      "date": "Mar 06, 2026",
+      "lines": 10,
+      "type": "Bug",
+      "repo": "drupal_lb_hero"
+    },
+    {
+      "hash": "86b97c0e97a6ae59b7ea63354b13da43bd4a72cc",
+      "message": "Issue #3577472: Fix auto-populate lb_donate block info from field_section_title ",
+      "date": "Mar 06, 2026",
+      "lines": 4,
+      "type": "Maintenance",
+      "repo": "drupal_y_donate"
+    },
+    {
+      "hash": "7165e6b3812c7f5e9802f310ce9d0b5251d9d78f",
+      "message": "feat(ITCR-800): Allow location alerts to also show on Visibility Pages",
+      "date": "Mar 05, 2026",
+      "lines": 8,
+      "type": "Feature",
+      "repo": "open-y-subprojects_openy_node_alert"
+    },
+    {
+      "hash": "16d6ab8ce5f541f3f5b56e905b8ba4addb2cbba2",
+      "message": "Compile application",
+      "date": "Mar 04, 2026",
+      "lines": 10,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny_activity_finder"
+    },
+    {
+      "hash": "e9203e552782c5c0fabdf90538de45042027ade3",
+      "message": "Fix: The same item can be bookmarked multiple times.",
+      "date": "Mar 04, 2026",
+      "lines": 52,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny_activity_finder"
+    },
+    {
+      "hash": "4bc65e9b9e261c2a5c6976d4a19ba407930678ec",
+      "message": "back to dev",
+      "date": "Mar 03, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "f131b8a592358def685f74264bafe03e353512cb",
+      "message": "fix: remove redundant config deletion from post_update",
+      "date": "Mar 03, 2026",
+      "lines": 7,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "d7082137f692a41b3557612a48c1a86b06beed21",
+      "message": "fix: restore google_analytics in composer.json",
+      "date": "Mar 03, 2026",
+      "lines": 1,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "58f96147cb252b950fb88191d72b0dd5c595c6ff",
+      "message": "feat: deprecate google_analytics module in favor of google_tag",
+      "date": "Mar 03, 2026",
+      "lines": 36,
+      "type": "Feature",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "8dec4305e9e6d8ac392261d86ba929e24a9737fe",
+      "message": "Update version to 11.3.1.0 in openy.info.yml",
+      "date": "Mar 03, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "a7995b5b8b2f131c1cf8f80363d9f57f15764f04",
+      "message": "Update version from 11.3.0.1-rc1 to 11.3.0.0",
+      "date": "Mar 03, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "ef00ff3485e363c153ff82176f4866dbfe5f96ac",
+      "message": "Update ycloudyusa/yusaopeny version constraint for dev",
+      "date": "Mar 03, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny-project"
+    },
+    {
+      "hash": "5ad0256791a261f3d9050a5f75963a49e5545152",
+      "message": "Update ycloudyusa/yusaopeny version constraint",
+      "date": "Mar 03, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny-project"
+    },
+    {
+      "hash": "7114d351cb004e08b753834928053fda37b7a529",
+      "message": "Revert \"fix(ITCR-1136): keep openy_prgf_group_schedules enabled, remove deprecat",
+      "date": "Mar 03, 2026",
+      "lines": 34,
+      "type": "Unknown",
+      "repo": "open-y-subprojects_openy_features"
+    },
+    {
+      "hash": "7f759352651ec02b75b3dcfaf0885dfb5e2a6876",
+      "message": "fix(ITCR-1136): keep openy_prgf_group_schedules enabled, remove deprecated deps",
+      "date": "Mar 03, 2026",
+      "lines": 34,
+      "type": "Bug",
+      "repo": "open-y-subprojects_openy_features"
+    },
+    {
+      "hash": "1cbe1a3ec3637ad4577ac2f786f237888dbd45b4",
+      "message": "fix(ITCR-1087): Fix Layout Builder WSOD when editing Branch/Facility nodes",
+      "date": "Mar 03, 2026",
+      "lines": 91,
+      "type": "Bug",
+      "repo": "drupal_ws_small_y"
+    },
+    {
       "hash": "69fa769f644223d1e271ba9f88ebd9d43cc7f5ca",
       "message": "fix: remove breadcrumb block max-age=0 that breaks Dynamic Page Cache",
       "date": "Feb 27, 2026",
       "lines": 8,
       "type": "Bug",
       "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "37c140b5c9037ed02f3823fb94c75686ecc5559e",
+      "message": "feat(ITCR-1136): auto-uninstall openy_prgf_group_schedules via hook_uninstall",
+      "date": "Feb 27, 2026",
+      "lines": 32,
+      "type": "Feature",
+      "repo": "open-y-subprojects_openy_features"
     },
     {
       "hash": "189fe59b2732dff697bb2bf989b16f971c1d8b49",
@@ -46530,6 +46762,14 @@
       "lines": 43,
       "type": "Feature",
       "repo": "YCloudYUSA_yusaopeny_activity_finder"
+    },
+    {
+      "hash": "38df157d856682188d75359476e012c0d9e9e53a",
+      "message": "feat(ITCR-1136): Remove openy_gxp dependency from openy_prgf_embedded_groupexpro",
+      "date": "Feb 26, 2026",
+      "lines": 1,
+      "type": "Feature",
+      "repo": "open-y-subprojects_openy_features"
     },
     {
       "hash": "74c92ae1925afd881970d0e7c73eadffc4364caf",
@@ -47842,238 +48082,6 @@
       "lines": 10,
       "type": "Bug",
       "repo": "drupal_ws_small_y"
-    },
-    {
-      "hash": "a5ce771f2eaaeafab7182b2f6151b480f7633a44",
-      "message": "fix: restore .install from origin, update submodules with media_library migratio",
-      "date": "Dec 18, 2025",
-      "lines": 85,
-      "type": "Bug",
-      "repo": "drupal_ws_small_y"
-    },
-    {
-      "hash": "c3ce031ea8fffacf5e1b6cbd5e6570a071ba6a4c",
-      "message": "chore: remove version field from composer.json",
-      "date": "Dec 18, 2025",
-      "lines": 3,
-      "type": "Maintenance",
-      "repo": "drupal_ws_small_y"
-    },
-    {
-      "hash": "b436877b55e2d431d4d762ede0f44866bdb25538",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 18, 2025",
-      "lines": 124,
-      "type": "Feature",
-      "repo": "drupal_ws_small_y"
-    },
-    {
-      "hash": "d05aaf90527eb1fa5dbde23f8991e5710c91d5b8",
-      "message": "fix: restore original update hooks + add media_library migration",
-      "date": "Dec 18, 2025",
-      "lines": 34,
-      "type": "Bug",
-      "repo": "drupal_ws_small_y"
-    },
-    {
-      "hash": "998c9986fa42c6968b956a8860d765dce3ec0576",
-      "message": "fix: restore ws_small_y_staff_install hook + add media_library migration",
-      "date": "Dec 18, 2025",
-      "lines": 26,
-      "type": "Bug",
-      "repo": "drupal_ws_small_y"
-    },
-    {
-      "hash": "55172ab4b4d7e1267eca909df401be21a3bd3b74",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 18, 2025",
-      "lines": 440,
-      "type": "Feature",
-      "repo": "drupal_ws_small_y"
-    },
-    {
-      "hash": "72adebfaadb31dd9fa6dbe4898defef4b00c5604",
-      "message": "Revert \"Reapply \"[#3464795] Add support for camp content type\"\"",
-      "date": "Dec 18, 2025",
-      "lines": 58,
-      "type": "Unknown",
-      "repo": "drupal_y_branch_menu"
-    },
-    {
-      "hash": "15c104491826a60a1f6e92d34089fc07a63c597d",
-      "message": "Reapply \"[#3464795] Add support for camp content type\"",
-      "date": "Dec 18, 2025",
-      "lines": 58,
-      "type": "Unknown",
-      "repo": "drupal_y_branch_menu"
-    },
-    {
-      "hash": "15cf5869929e60e8f3faf9e9dbe39beff888e9b2",
-      "message": "Revert \"[#3464795] Add support for camp content type\"",
-      "date": "Dec 18, 2025",
-      "lines": 58,
-      "type": "Unknown",
-      "repo": "drupal_y_branch_menu"
-    },
-    {
-      "hash": "259af6e543d4d0dcc5d11f59d0ac42708b2d39ae",
-      "message": "[#3464795] Add support for camp content type",
-      "date": "Dec 18, 2025",
-      "lines": 58,
-      "type": "Unknown",
-      "repo": "drupal_y_branch_menu"
-    },
-    {
-      "hash": "b3bbc982453d69501dc9d940455a7793620edeb4",
-      "message": "fix: preserve historical update hooks and add new media_library migration hook",
-      "date": "Dec 18, 2025",
-      "lines": 297,
-      "type": "Bug",
-      "repo": "drupal_y_lb_article"
-    },
-    {
-      "hash": "0ac16da2dfe5d622302819ee57ba566dc364185c",
-      "message": "chore: remove version field from composer.json",
-      "date": "Dec 18, 2025",
-      "lines": 3,
-      "type": "Maintenance",
-      "repo": "drupal_y_lb_article"
-    },
-    {
-      "hash": "fa1be145ebc3a8d7d4dd7d356e6e6f6cfd3b1c60",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 18, 2025",
-      "lines": 41,
-      "type": "Feature",
-      "repo": "drupal_y_lb_article"
-    },
-    {
-      "hash": "4ab2a809a4bf5929db6eb1af13b262da2fa3c487",
-      "message": "fix: restore original update hooks + add media_library migration",
-      "date": "Dec 18, 2025",
-      "lines": 141,
-      "type": "Bug",
-      "repo": "drupal_y_lb_article"
-    },
-    {
-      "hash": "f20f38b9953276bc609144f7e7fed89bade375df",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 18, 2025",
-      "lines": 448,
-      "type": "Feature",
-      "repo": "drupal_y_lb_article"
-    },
-    {
-      "hash": "f63d1030ec2426b0dd576149006f48ded9c1b2ad",
-      "message": "chore: remove version field from composer.json",
-      "date": "Dec 18, 2025",
-      "lines": 3,
-      "type": "Maintenance",
-      "repo": "drupal_y_donate"
-    },
-    {
-      "hash": "99c10e79283d227853c37cf9bac7d0c5902067b4",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 18, 2025",
-      "lines": 42,
-      "type": "Feature",
-      "repo": "drupal_y_donate"
-    },
-    {
-      "hash": "698cebe6cb34f0ba1123da31110e427944d340c2",
-      "message": "Update lb_branch_hours_blocks constraint to ^2 || ^3",
-      "date": "Dec 18, 2025",
-      "lines": 2,
-      "type": "Unknown",
-      "repo": "drupal_y_facility"
-    },
-    {
-      "hash": "6e509b106b18ddbc15712ed1c3d63d6f34b9ff4d",
-      "message": "Add lb_branch_hours_blocks to composer.json require",
-      "date": "Dec 18, 2025",
-      "lines": 1,
-      "type": "Unknown",
-      "repo": "drupal_y_facility"
-    },
-    {
-      "hash": "2a1e54616f15e91bf7b331b07e13869eb8bcd6c2",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 18, 2025",
-      "lines": 18,
-      "type": "Feature",
-      "repo": "drupal_y_facility"
-    },
-    {
-      "hash": "8d4e4871dc663f88009476558de899bce6c60bb8",
-      "message": "Update lb_branch_hours_blocks constraint to ^2 || ^3",
-      "date": "Dec 18, 2025",
-      "lines": 2,
-      "type": "Unknown",
-      "repo": "drupal_y_camp"
-    },
-    {
-      "hash": "ea68328bee3ac291210c95e683e1284b66735dbc",
-      "message": "Add lb_branch_hours_blocks to composer.json require",
-      "date": "Dec 18, 2025",
-      "lines": 1,
-      "type": "Unknown",
-      "repo": "drupal_y_camp"
-    },
-    {
-      "hash": "08b846c0145ebb535e22179245f0ef0e9a8885c5",
-      "message": "fix: preserve historical update hooks and add new media_library migration hook",
-      "date": "Dec 18, 2025",
-      "lines": 762,
-      "type": "Bug",
-      "repo": "drupal_y_camp"
-    },
-    {
-      "hash": "f82d336dd139f35c6e939948541681b728ceb91d",
-      "message": "chore: remove version field from composer.json",
-      "date": "Dec 18, 2025",
-      "lines": 3,
-      "type": "Maintenance",
-      "repo": "drupal_y_camp"
-    },
-    {
-      "hash": "0d9378583f65b6c9c56950ba1af2d624def05903",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 18, 2025",
-      "lines": 47,
-      "type": "Feature",
-      "repo": "drupal_y_camp"
-    },
-    {
-      "hash": "b48eabdccdc0a36ce0c1403bf2858837f2bb3400",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 18, 2025",
-      "lines": 18,
-      "type": "Feature",
-      "repo": "drupal_y_program"
-    },
-    {
-      "hash": "f2eb4ebb61aeab0cb4748c108cd3fdb0c7ee78b5",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 18, 2025",
-      "lines": 18,
-      "type": "Feature",
-      "repo": "drupal_y_program_subcategory"
-    },
-    {
-      "hash": "79a5243411c9cf8b517e2cf478cc9363012c0028",
-      "message": "docs: Add Y Styles documentation to README",
-      "date": "Dec 16, 2025",
-      "lines": 25,
-      "type": "Maintenance",
-      "repo": "YCloudYUSA_y_lb"
-    },
-    {
-      "hash": "e2489a8ca593ea0742b325837538df318efa5c08",
-      "message": "fix: Add allow_style to Y Styles config for Landing Page",
-      "date": "Dec 16, 2025",
-      "lines": 17,
-      "type": "Bug",
-      "repo": "YCloudYUSA_y_lb"
     }
   ],
   "commitsPerYear": [
@@ -48123,7 +48131,7 @@
     },
     {
       "year": 2026,
-      "commits": 144
+      "commits": 184
     }
   ]
 }
