@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-09T03:17:45.392643",
+  "generated": "2026-03-16T03:20:46.893870",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -1080,18 +1080,18 @@
     },
     {
       "date": "2026-02",
-      "total": 68,
-      "features": 7,
+      "total": 69,
+      "features": 8,
       "bugs": 26,
       "maintenance": 26,
       "unknown": 9
     },
     {
       "date": "2026-03",
-      "total": 38,
+      "total": 50,
       "features": 3,
-      "bugs": 13,
-      "maintenance": 12,
+      "bugs": 19,
+      "maintenance": 18,
       "unknown": 10
     }
   ],
@@ -44870,8 +44870,8 @@
       "date": "2026-03",
       "commit": "multi",
       "production": {
-        "loc": 95414,
-        "functions": 5755,
+        "loc": 95444,
+        "functions": 5757,
         "ccn": {
           "avg": 2.5,
           "p95": 8
@@ -45563,7 +45563,7 @@
       "antipatterns": {
         "magicKeys": 4587,
         "deepArrays": 2715,
-        "serviceLocators": 2872
+        "serviceLocators": 2875
       },
       "hotspots": [
         {
@@ -45984,10 +45984,10 @@
         },
         {
           "name": "openy_features",
-          "loc": 10534,
+          "loc": 10544,
           "ccn": 2.6,
           "mi": 92.8,
-          "antipatterns": 1200
+          "antipatterns": 1201
         },
         {
           "name": "openy_custom",
@@ -46375,6 +46375,13 @@
           "antipatterns": 13
         },
         {
+          "name": "lb_testimonial_blocks",
+          "loc": 110,
+          "ccn": 3.3,
+          "mi": 97.1,
+          "antipatterns": 10
+        },
+        {
           "name": "lb_branch_amenities_blocks",
           "loc": 105,
           "ccn": 5,
@@ -46393,13 +46400,6 @@
           "loc": 90,
           "ccn": 2.7,
           "mi": 98.2,
-          "antipatterns": 8
-        },
-        {
-          "name": "lb_testimonial_blocks",
-          "loc": 90,
-          "ccn": 3.1,
-          "mi": 98.7,
           "antipatterns": 8
         },
         {
@@ -46483,6 +46483,62 @@
     }
   ],
   "commits": [
+    {
+      "hash": "27fc04070d724bfcc893d0a96bfc942120bea499",
+      "message": "Issue #3575365: Add optional link field to testimonial_item for \"Read more\" func",
+      "date": "Mar 11, 2026",
+      "lines": 186,
+      "type": "Maintenance",
+      "repo": "drupal_lb_testimonial_blocks"
+    },
+    {
+      "hash": "8ec65a975aff98cb1dcbd28378346bc5e623acc5",
+      "message": "fix: bump openy_custom minimum to ^3.1.4",
+      "date": "Mar 10, 2026",
+      "lines": 2,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "20fab1e8ff49a4f8aee97a55f2ec566952149b69",
+      "message": "fix: bump openy_custom minimum version to ^3.1.3",
+      "date": "Mar 10, 2026",
+      "lines": 2,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "8b540c92eb6aee4038d4e5564ad6acf4a71a403f",
+      "message": "fix: add hook_update to remove google_analytics permission from all roles",
+      "date": "Mar 10, 2026",
+      "lines": 14,
+      "type": "Bug",
+      "repo": "open-y-subprojects_openy_features"
+    },
+    {
+      "hash": "7b6e55ece549c0d43b56948c4ca7d6b0fd95d64d",
+      "message": "fix: remove google_analytics permission from authenticated role",
+      "date": "Mar 10, 2026",
+      "lines": 1,
+      "type": "Bug",
+      "repo": "open-y-subprojects_openy_features"
+    },
+    {
+      "hash": "a47188f1297823d0de6e984131b16b7cc22c59ba",
+      "message": "fix(openy_user): remove google_analytics hard dependency",
+      "date": "Mar 10, 2026",
+      "lines": 1,
+      "type": "Bug",
+      "repo": "open-y-subprojects_openy_features"
+    },
+    {
+      "hash": "a68e1657ddae5e4c604439f4641103616e57e6b8",
+      "message": "fix: remove circular yusaopeny require from composer.json",
+      "date": "Mar 10, 2026",
+      "lines": 3,
+      "type": "Bug",
+      "repo": "open-y-subprojects_openy_custom"
+    },
     {
       "hash": "ea61c789a095c89b280d8beb7b92428395430aa2",
       "message": "Update version to 11.3.1.2-dev",
@@ -46594,6 +46650,14 @@
       "lines": 8,
       "type": "Feature",
       "repo": "open-y-subprojects_openy_node_alert"
+    },
+    {
+      "hash": "77374ad964cb80de384e7f53eb36b4c1f675cb75",
+      "message": "feat: add optional testimonial link to template",
+      "date": "Mar 05, 2026",
+      "lines": 2,
+      "type": "Feature",
+      "repo": "drupal_ws_small_y"
     },
     {
       "hash": "16d6ab8ce5f541f3f5b56e905b8ba4addb2cbba2",
@@ -48018,70 +48082,6 @@
       "lines": 35,
       "type": "Feature",
       "repo": "drupal_ws_event"
-    },
-    {
-      "hash": "2cfc0855395c9e81e14219294ecf61eced8e4f2a",
-      "message": "fix: restore original update hooks + add media_library migration",
-      "date": "Dec 18, 2025",
-      "lines": 208,
-      "type": "Bug",
-      "repo": "drupal_ws_event"
-    },
-    {
-      "hash": "ec554b74d467356decf016883be6e7519f537a08",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 18, 2025",
-      "lines": 583,
-      "type": "Feature",
-      "repo": "drupal_ws_event"
-    },
-    {
-      "hash": "a4cdb1508217d440a7c4a04bb6a2133f6e3dadfd",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 18, 2025",
-      "lines": 20,
-      "type": "Feature",
-      "repo": "drupal_ws_promotion"
-    },
-    {
-      "hash": "cc00bb464d228e08b3f71aba5632531f27739aec",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 18, 2025",
-      "lines": 20,
-      "type": "Feature",
-      "repo": "drupal_ws_colorway_canada"
-    },
-    {
-      "hash": "6393ecd2f657d9b904baa941a005c15bf1c5c0fb",
-      "message": "Update lb_branch_hours_blocks constraint to ^2 || ^3, remove duplicate",
-      "date": "Dec 18, 2025",
-      "lines": 3,
-      "type": "Unknown",
-      "repo": "drupal_ws_small_y"
-    },
-    {
-      "hash": "112644856bf83c93398b313112b0e6c1a9960099",
-      "message": "Add lb_branch_hours_blocks to composer.json require",
-      "date": "Dec 18, 2025",
-      "lines": 1,
-      "type": "Unknown",
-      "repo": "drupal_ws_small_y"
-    },
-    {
-      "hash": "66d66be6be84ce50129c3bc2de941802868af534",
-      "message": "chore: remove version field from composer.json",
-      "date": "Dec 18, 2025",
-      "lines": 3,
-      "type": "Maintenance",
-      "repo": "drupal_ws_small_y"
-    },
-    {
-      "hash": "f0d06f94bbd958164c50280bbdf9eb93fd4f0cea",
-      "message": "fix: update lb_staff_members_blocks dependency to ^3.0",
-      "date": "Dec 18, 2025",
-      "lines": 10,
-      "type": "Bug",
-      "repo": "drupal_ws_small_y"
     }
   ],
   "commitsPerYear": [
@@ -48131,7 +48131,7 @@
     },
     {
       "year": 2026,
-      "commits": 184
+      "commits": 197
     }
   ]
 }
