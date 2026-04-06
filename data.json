@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-30T03:21:50.010075",
+  "generated": "2026-04-06T03:21:19.920385",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -1088,11 +1088,11 @@
     },
     {
       "date": "2026-03",
-      "total": 57,
+      "total": 59,
       "features": 3,
       "bugs": 22,
-      "maintenance": 20,
-      "unknown": 12
+      "maintenance": 21,
+      "unknown": 13
     }
   ],
   "snapshots": [
@@ -44867,11 +44867,11 @@
       ]
     },
     {
-      "date": "2026-03",
+      "date": "2026-04",
       "commit": "multi",
       "production": {
-        "loc": 95444,
-        "functions": 5757,
+        "loc": 95482,
+        "functions": 5760,
         "ccn": {
           "avg": 2.5,
           "p95": 8
@@ -45563,7 +45563,7 @@
       "antipatterns": {
         "magicKeys": 4587,
         "deepArrays": 2715,
-        "serviceLocators": 2875
+        "serviceLocators": 2878
       },
       "hotspots": [
         {
@@ -45966,523 +45966,18 @@
           "mi": 58,
           "antipatterns": 5
         }
-      ],
-      "perRepo": [
-        {
-          "name": "yusaopeny_gated_content",
-          "loc": 15793,
-          "ccn": 2.3,
-          "mi": 86.5,
-          "antipatterns": 1777
-        },
-        {
-          "name": "openy_gated_content",
-          "loc": 12756,
-          "ccn": 2.3,
-          "mi": 87,
-          "antipatterns": 1244
-        },
-        {
-          "name": "openy_features",
-          "loc": 10544,
-          "ccn": 2.6,
-          "mi": 92.8,
-          "antipatterns": 1201
-        },
-        {
-          "name": "openy_custom",
-          "loc": 7490,
-          "ccn": 2.4,
-          "mi": 86.6,
-          "antipatterns": 787
-        },
-        {
-          "name": "openy_digital_signage",
-          "loc": 6643,
-          "ccn": 2.2,
-          "mi": 83.5,
-          "antipatterns": 571
-        },
-        {
-          "name": "yusaopeny_activity_finder",
-          "loc": 3511,
-          "ccn": 3.3,
-          "mi": 78.4,
-          "antipatterns": 472
-        },
-        {
-          "name": "yusaopeny",
-          "loc": 2732,
-          "ccn": 2.4,
-          "mi": 82.9,
-          "antipatterns": 570
-        },
-        {
-          "name": "openy_activity_finder",
-          "loc": 2620,
-          "ccn": 3.4,
-          "mi": 80.7,
-          "antipatterns": 323
-        },
-        {
-          "name": "y_lb",
-          "loc": 2225,
-          "ccn": 2.5,
-          "mi": 92.9,
-          "antipatterns": 212
-        },
-        {
-          "name": "yusaopeny_memberships",
-          "loc": 1985,
-          "ccn": 2.8,
-          "mi": 85.4,
-          "antipatterns": 282
-        },
-        {
-          "name": "openy_repeat",
-          "loc": 1795,
-          "ccn": 3.8,
-          "mi": 82.5,
-          "antipatterns": 91
-        },
-        {
-          "name": "ws_small_y",
-          "loc": 1700,
-          "ccn": 2.6,
-          "mi": 95.2,
-          "antipatterns": 156
-        },
-        {
-          "name": "openy_traction_rec",
-          "loc": 1632,
-          "ccn": 2,
-          "mi": 92.5,
-          "antipatterns": 71
-        },
-        {
-          "name": "openy_pef_gxp_sync",
-          "loc": 1513,
-          "ccn": 3,
-          "mi": 80.6,
-          "antipatterns": 41
-        },
-        {
-          "name": "openy_daxko_gxp_syncer",
-          "loc": 1410,
-          "ccn": 2.1,
-          "mi": 80.5,
-          "antipatterns": 64
-        },
-        {
-          "name": "program_search",
-          "loc": 1231,
-          "ccn": 3.4,
-          "mi": 78.6,
-          "antipatterns": 159
-        },
-        {
-          "name": "yusaopeny_ymca360",
-          "loc": 1187,
-          "ccn": 1.7,
-          "mi": 93,
-          "antipatterns": 104
-        },
-        {
-          "name": "ws_event",
-          "loc": 1175,
-          "ccn": 3.1,
-          "mi": 90.4,
-          "antipatterns": 125
-        },
-        {
-          "name": "y_camp",
-          "loc": 1058,
-          "ccn": 2.5,
-          "mi": 85.4,
-          "antipatterns": 96
-        },
-        {
-          "name": "openy_map",
-          "loc": 1044,
-          "ccn": 2.8,
-          "mi": 80.7,
-          "antipatterns": 214
-        },
-        {
-          "name": "y_branch",
-          "loc": 898,
-          "ccn": 3.3,
-          "mi": 77.4,
-          "antipatterns": 40
-        },
-        {
-          "name": "openy_lily",
-          "loc": 746,
-          "ccn": 4.7,
-          "mi": 83.2,
-          "antipatterns": 123
-        },
-        {
-          "name": "openy_daxko2",
-          "loc": 739,
-          "ccn": 5.5,
-          "mi": 60.8,
-          "antipatterns": 63
-        },
-        {
-          "name": "openy_node_alert",
-          "loc": 731,
-          "ccn": 3.2,
-          "mi": 88.2,
-          "antipatterns": 50
-        },
-        {
-          "name": "openy_mappings",
-          "loc": 728,
-          "ccn": 1.6,
-          "mi": 95.3,
-          "antipatterns": 18
-        },
-        {
-          "name": "openy_rose",
-          "loc": 647,
-          "ccn": 5,
-          "mi": 83.9,
-          "antipatterns": 100
-        },
-        {
-          "name": "y_pef_schedule",
-          "loc": 625,
-          "ccn": 2,
-          "mi": 95.7,
-          "antipatterns": 72
-        },
-        {
-          "name": "openy_focal_point",
-          "loc": 605,
-          "ccn": 2,
-          "mi": 83,
-          "antipatterns": 122
-        },
-        {
-          "name": "ws_promotion",
-          "loc": 554,
-          "ccn": 1.9,
-          "mi": 97.9,
-          "antipatterns": 66
-        },
-        {
-          "name": "y_lb_article",
-          "loc": 529,
-          "ccn": 2.2,
-          "mi": 96.3,
-          "antipatterns": 70
-        },
-        {
-          "name": "y_facility",
-          "loc": 451,
-          "ccn": 2.6,
-          "mi": 74.7,
-          "antipatterns": 23
-        },
-        {
-          "name": "lb_cards",
-          "loc": 432,
-          "ccn": 3.6,
-          "mi": 84.4,
-          "antipatterns": 33
-        },
-        {
-          "name": "openy_demo_content",
-          "loc": 404,
-          "ccn": 3.1,
-          "mi": 55.6,
-          "antipatterns": 21
-        },
-        {
-          "name": "lb_grid_cta",
-          "loc": 402,
-          "ccn": 2.8,
-          "mi": 91.5,
-          "antipatterns": 46
-        },
-        {
-          "name": "y_donate",
-          "loc": 372,
-          "ccn": 3.5,
-          "mi": 84.3,
-          "antipatterns": 74
-        },
-        {
-          "name": "lb_theme_switcher",
-          "loc": 350,
-          "ccn": 4.8,
-          "mi": 79.4,
-          "antipatterns": 20
-        },
-        {
-          "name": "y_program",
-          "loc": 349,
-          "ccn": 2.5,
-          "mi": 77.3,
-          "antipatterns": 11
-        },
-        {
-          "name": "lb_related_events_blocks",
-          "loc": 320,
-          "ccn": 2.7,
-          "mi": 90.3,
-          "antipatterns": 43
-        },
-        {
-          "name": "openy_node_session",
-          "loc": 307,
-          "ccn": 1.9,
-          "mi": 92.2,
-          "antipatterns": 29
-        },
-        {
-          "name": "y_program_subcategory",
-          "loc": 301,
-          "ccn": 2.4,
-          "mi": 76.1,
-          "antipatterns": 10
-        },
-        {
-          "name": "ynorth_gxp_spots_proxy",
-          "loc": 297,
-          "ccn": 3.8,
-          "mi": 85.7,
-          "antipatterns": 2
-        },
-        {
-          "name": "lb_branch_hours_blocks",
-          "loc": 281,
-          "ccn": 2.7,
-          "mi": 79.6,
-          "antipatterns": 46
-        },
-        {
-          "name": "lb_related_articles_blocks",
-          "loc": 274,
-          "ccn": 3.3,
-          "mi": 88.7,
-          "antipatterns": 48
-        },
-        {
-          "name": "openy_addthis",
-          "loc": 254,
-          "ccn": 2.2,
-          "mi": 96.5,
-          "antipatterns": 28
-        },
-        {
-          "name": "lb_accordion",
-          "loc": 217,
-          "ccn": 3,
-          "mi": 91.4,
-          "antipatterns": 29
-        },
-        {
-          "name": "lb_hero",
-          "loc": 196,
-          "ccn": 3,
-          "mi": 93.9,
-          "antipatterns": 16
-        },
-        {
-          "name": "lb_statistics",
-          "loc": 196,
-          "ccn": 3.4,
-          "mi": 92.8,
-          "antipatterns": 21
-        },
-        {
-          "name": "openy_socrates",
-          "loc": 193,
-          "ccn": 2.6,
-          "mi": 93.9,
-          "antipatterns": 14
-        },
-        {
-          "name": "openy_hours_formatter",
-          "loc": 188,
-          "ccn": 4.5,
-          "mi": 79,
-          "antipatterns": 28
-        },
-        {
-          "name": "lb_carousel",
-          "loc": 186,
-          "ccn": 2.6,
-          "mi": 93.6,
-          "antipatterns": 21
-        },
-        {
-          "name": "ws_media_entity_document",
-          "loc": 172,
-          "ccn": 2.4,
-          "mi": 97.4,
-          "antipatterns": 14
-        },
-        {
-          "name": "ws_lb_tabs",
-          "loc": 162,
-          "ccn": 3.4,
-          "mi": 90.4,
-          "antipatterns": 19
-        },
-        {
-          "name": "openy_er",
-          "loc": 146,
-          "ccn": 3,
-          "mi": 92.8,
-          "antipatterns": 18
-        },
-        {
-          "name": "lb_partners_blocks",
-          "loc": 141,
-          "ccn": 3.4,
-          "mi": 93.9,
-          "antipatterns": 8
-        },
-        {
-          "name": "lb_claro",
-          "loc": 130,
-          "ccn": 3,
-          "mi": 92.1,
-          "antipatterns": 15
-        },
-        {
-          "name": "y_branch_menu",
-          "loc": 129,
-          "ccn": 2.7,
-          "mi": 94.1,
-          "antipatterns": 21
-        },
-        {
-          "name": "y_lb_demo_content",
-          "loc": 127,
-          "ccn": 1.9,
-          "mi": 99.8,
-          "antipatterns": 9
-        },
-        {
-          "name": "lb_staff_members_blocks",
-          "loc": 119,
-          "ccn": 3.4,
-          "mi": 91.8,
-          "antipatterns": 13
-        },
-        {
-          "name": "lb_testimonial_blocks",
-          "loc": 110,
-          "ccn": 3.3,
-          "mi": 97.1,
-          "antipatterns": 10
-        },
-        {
-          "name": "lb_branch_amenities_blocks",
-          "loc": 105,
-          "ccn": 5,
-          "mi": 89,
-          "antipatterns": 13
-        },
-        {
-          "name": "useless_machines",
-          "loc": 92,
-          "ccn": 1,
-          "mi": 100,
-          "antipatterns": 23
-        },
-        {
-          "name": "lb_ping_pong",
-          "loc": 90,
-          "ccn": 2.7,
-          "mi": 98.2,
-          "antipatterns": 8
-        },
-        {
-          "name": "ws_colorway_canada",
-          "loc": 90,
-          "ccn": 1.5,
-          "mi": 99.5,
-          "antipatterns": 12
-        },
-        {
-          "name": "openy_autocomplete_path",
-          "loc": 89,
-          "ccn": 2.7,
-          "mi": 90.7,
-          "antipatterns": 2
-        },
-        {
-          "name": "lb_simple_menu",
-          "loc": 78,
-          "ccn": 3.5,
-          "mi": 98.1,
-          "antipatterns": 7
-        },
-        {
-          "name": "lb_promo",
-          "loc": 77,
-          "ccn": 2.7,
-          "mi": 98.4,
-          "antipatterns": 5
-        },
-        {
-          "name": "openy_gtranslate",
-          "loc": 72,
-          "ccn": 2.5,
-          "mi": 96.3,
-          "antipatterns": 17
-        },
-        {
-          "name": "lb_table",
-          "loc": 47,
-          "ccn": 2,
-          "mi": 100,
-          "antipatterns": 4
-        },
-        {
-          "name": "openy_prgf_session_table",
-          "loc": 36,
-          "ccn": 2.7,
-          "mi": 96.9,
-          "antipatterns": 2
-        },
-        {
-          "name": "lb_modal",
-          "loc": 35,
-          "ccn": 1.3,
-          "mi": 100,
-          "antipatterns": 3
-        },
-        {
-          "name": "openy_branch_selector",
-          "loc": 30,
-          "ccn": 2.5,
-          "mi": 96.9,
-          "antipatterns": 14
-        },
-        {
-          "name": "lb_webform",
-          "loc": 25,
-          "ccn": 1,
-          "mi": 100,
-          "antipatterns": 1
-        },
-        {
-          "name": "lb_branch_social_links_blocks",
-          "loc": 25,
-          "ccn": 1.3,
-          "mi": 100,
-          "antipatterns": 4
-        }
       ]
     }
   ],
   "commits": [
+    {
+      "hash": "ad8a720fc1bc092170155eaf417c4aa44e03ee3e",
+      "message": "Add icons and migration",
+      "date": "Mar 30, 2026",
+      "lines": 1574,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_y_lb_demo_content"
+    },
     {
       "hash": "c3fcab1139448cdaf728e429656cdd0c37296a56",
       "message": "fix: use cross-DB findTables, add safety checks to field purge",
@@ -48074,14 +47569,6 @@
       "lines": 139,
       "type": "Bug",
       "repo": "drupal_ws_lb_tabs"
-    },
-    {
-      "hash": "02cd828fd5ba3060219e19a0100b553d6b1403d7",
-      "message": "chore: remove version field from composer.json",
-      "date": "Dec 18, 2025",
-      "lines": 3,
-      "type": "Maintenance",
-      "repo": "drupal_ws_lb_tabs"
     }
   ],
   "commitsPerYear": [
@@ -48131,7 +47618,7 @@
     },
     {
       "year": 2026,
-      "commits": 204
+      "commits": 206
     }
   ]
 }
