@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-20T03:21:56.324482",
+  "generated": "2026-04-27T03:22:20.656110",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -1088,19 +1088,19 @@
     },
     {
       "date": "2026-03",
-      "total": 61,
+      "total": 63,
       "features": 3,
-      "bugs": 22,
+      "bugs": 24,
       "maintenance": 21,
       "unknown": 15
     },
     {
       "date": "2026-04",
-      "total": 17,
+      "total": 20,
       "features": 3,
       "bugs": 3,
-      "maintenance": 6,
-      "unknown": 5
+      "maintenance": 8,
+      "unknown": 6
     }
   ],
   "snapshots": [
@@ -45979,6 +45979,14 @@
   ],
   "commits": [
     {
+      "hash": "a8d619ce26c0e6d393b42bc7f0e87c816084f303",
+      "message": "issue/php_84_deprecation_message_about_nullable_values|Fixed the issue with inco",
+      "date": "Apr 20, 2026",
+      "lines": 6,
+      "type": "Unknown",
+      "repo": "open-y-subprojects_openy_features"
+    },
+    {
       "hash": "ee173143efef1b3a741d19548db75102db43bb72",
       "message": "Update version to 11.3.1.3-dev",
       "date": "Apr 14, 2026",
@@ -46113,6 +46121,22 @@
       "lines": 15,
       "type": "Unknown",
       "repo": "open-y-subprojects_openy_daxko_gxp_syncer"
+    },
+    {
+      "hash": "ff5fac2340dc8f3c5981fc15fe731df59004fa14",
+      "message": "fix: build compiled CSS for join fee style fix",
+      "date": "Mar 19, 2026",
+      "lines": 10,
+      "type": "Bug",
+      "repo": "open-y-subprojects_openy_custom"
+    },
+    {
+      "hash": "c24eaa0ca66879c78a49bc229f797f2370995c8d",
+      "message": "fix: style join fee to match monthly rate layout in membership calculator",
+      "date": "Mar 19, 2026",
+      "lines": 10,
+      "type": "Bug",
+      "repo": "open-y-subprojects_openy_custom"
     },
     {
       "hash": "320fc96944ab4072730ec516f972e65bea939c64",
@@ -47553,30 +47577,6 @@
       "lines": 3,
       "type": "Maintenance",
       "repo": "drupal_lb_statistics"
-    },
-    {
-      "hash": "a8b3a141a0fa7bc7bd5775828f56a71c4e30f647",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 18, 2025",
-      "lines": 49,
-      "type": "Feature",
-      "repo": "drupal_lb_statistics"
-    },
-    {
-      "hash": "58afbcc92706a56ac9e585cb177020c479640c77",
-      "message": "chore: remove version field from composer.json",
-      "date": "Dec 18, 2025",
-      "lines": 3,
-      "type": "Maintenance",
-      "repo": "drupal_lb_simple_menu"
-    },
-    {
-      "hash": "7099fc4176bdb44dad541fe4ffc2a48b4d1dffc3",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 18, 2025",
-      "lines": 35,
-      "type": "Feature",
-      "repo": "drupal_lb_simple_menu"
     }
   ],
   "commitsPerYear": [
@@ -47626,7 +47626,7 @@
     },
     {
       "year": 2026,
-      "commits": 225
+      "commits": 230
     }
   ]
 }
