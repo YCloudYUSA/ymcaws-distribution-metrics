@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-04T03:24:07.206560",
+  "generated": "2026-05-11T03:25:47.273070",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -1096,19 +1096,19 @@
     },
     {
       "date": "2026-04",
-      "total": 47,
+      "total": 48,
       "features": 13,
       "bugs": 5,
       "maintenance": 18,
-      "unknown": 11
+      "unknown": 12
     },
     {
       "date": "2026-05",
-      "total": 7,
-      "features": 0,
-      "bugs": 0,
-      "maintenance": 5,
-      "unknown": 2
+      "total": 14,
+      "features": 2,
+      "bugs": 3,
+      "maintenance": 6,
+      "unknown": 3
     }
   ],
   "snapshots": [
@@ -45988,8 +45988,8 @@
       "date": "2026-05",
       "commit": "multi",
       "production": {
-        "loc": 95899,
-        "functions": 5794,
+        "loc": 95979,
+        "functions": 5797,
         "ccn": {
           "avg": 2.5,
           "p95": 8
@@ -46679,8 +46679,8 @@
       },
       "antipatterns": {
         "magicKeys": 4627,
-        "deepArrays": 2718,
-        "serviceLocators": 2892
+        "deepArrays": 2720,
+        "serviceLocators": 2897
       },
       "hotspots": [
         {
@@ -47157,10 +47157,10 @@
         },
         {
           "name": "openy_repeat",
-          "loc": 1795,
-          "ccn": 3.8,
+          "loc": 1867,
+          "ccn": 3.9,
           "mi": 82.5,
-          "antipatterns": 91
+          "antipatterns": 96
         },
         {
           "name": "ws_small_y",
@@ -47304,10 +47304,10 @@
         },
         {
           "name": "lb_cards",
-          "loc": 432,
-          "ccn": 3.6,
-          "mi": 84.4,
-          "antipatterns": 33
+          "loc": 440,
+          "ccn": 3.5,
+          "mi": 84.7,
+          "antipatterns": 35
         },
         {
           "name": "openy_demo_content",
@@ -47601,6 +47601,54 @@
   ],
   "commits": [
     {
+      "hash": "54cb9aef9c4dc8ed7828d3e5e40935efd29299f4",
+      "message": "feat: add image size guidance to field_media description",
+      "date": "May 07, 2026",
+      "lines": 15,
+      "type": "Feature",
+      "repo": "drupal_lb_cards"
+    },
+    {
+      "hash": "dbd125d16574d088f3facd9deb18960ceaa3a72f",
+      "message": "feat: add image size guidance to field_media description",
+      "date": "May 07, 2026",
+      "lines": 2,
+      "type": "Feature",
+      "repo": "drupal_lb_cards"
+    },
+    {
+      "hash": "f902054fc1372ac4bbc9fa00a252dbe776becaf8",
+      "message": "fix: increase chevron aspect ratio to 540/508 for taller image area",
+      "date": "May 07, 2026",
+      "lines": 4,
+      "type": "Bug",
+      "repo": "drupal_lb_cards"
+    },
+    {
+      "hash": "eac531ccb740962930dfb8b72ec57c9fed0e9006",
+      "message": "fix: increase aspect ratio to 540/400 for chevron and color variations",
+      "date": "May 07, 2026",
+      "lines": 8,
+      "type": "Bug",
+      "repo": "drupal_lb_cards"
+    },
+    {
+      "hash": "da30fa7105c3e1e322302e39402d2043a5d83a12",
+      "message": "fix: replace arbitrary min-height with aspect-ratio on card-img-wrapper",
+      "date": "May 07, 2026",
+      "lines": 1049,
+      "type": "Bug",
+      "repo": "drupal_lb_cards"
+    },
+    {
+      "hash": "aec9522b9522084aa474b4f2cc1cfa972f8e7ddd",
+      "message": "Restore Drupal 10 compatibility",
+      "date": "May 05, 2026",
+      "lines": 6,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny_ymca360"
+    },
+    {
       "hash": "0dd06b8424d4a80d27966b4e8aa01c2d3c89d0b2",
       "message": "docs: rebuild README for 2.x",
       "date": "May 01, 2026",
@@ -47647,6 +47695,14 @@
       "lines": 193,
       "type": "Feature",
       "repo": "YCloudYUSA_yusaopeny_ymca360"
+    },
+    {
+      "hash": "63a59667a75767b511f0747e243352e432b50e13",
+      "message": "Issue #XXXXXXX: opt-in cancelled-session badge on lb_repeat_schedules",
+      "date": "Apr 30, 2026",
+      "lines": 395,
+      "type": "Unknown",
+      "repo": "drupal_openy_repeat"
     },
     {
       "hash": "0d6b89332f115a854c260a02174b0d5af235b251",
@@ -49143,62 +49199,6 @@
       "lines": 2,
       "type": "Bug",
       "repo": "YCloudYUSA_y_lb"
-    },
-    {
-      "hash": "43dd84ad464b3b56e02019a694a3c9079eadc502",
-      "message": "fix: update lb_staff_members_blocks dependency and fix third_party_settings",
-      "date": "Dec 18, 2025",
-      "lines": 7,
-      "type": "Bug",
-      "repo": "YCloudYUSA_y_lb"
-    },
-    {
-      "hash": "72833450379259590339f39f31ffddf63d75d97b",
-      "message": "fix: add css.map files and remove from gitignore",
-      "date": "Dec 18, 2025",
-      "lines": 30,
-      "type": "Bug",
-      "repo": "YCloudYUSA_y_lb"
-    },
-    {
-      "hash": "7a924baf5ac79b91b493185bf258705fc4f19d4c",
-      "message": "chore: remove version field from composer.json",
-      "date": "Dec 18, 2025",
-      "lines": 3,
-      "type": "Maintenance",
-      "repo": "YCloudYUSA_y_lb"
-    },
-    {
-      "hash": "e6e4fe84ad391f0907c9e90817182490126e2f6d",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 18, 2025",
-      "lines": 3,
-      "type": "Feature",
-      "repo": "YCloudYUSA_y_lb"
-    },
-    {
-      "hash": "8e91bd63939d9b2253b76c83cbc88346a80dfd99",
-      "message": "fix: add update hooks for entity_browser to media_library migration",
-      "date": "Dec 18, 2025",
-      "lines": 137,
-      "type": "Bug",
-      "repo": "YCloudYUSA_y_lb"
-    },
-    {
-      "hash": "a6569d7d4ba254974d0312bdfbb97c1925705816",
-      "message": "feat: update dependency version constraints for new major versions",
-      "date": "Dec 18, 2025",
-      "lines": 56,
-      "type": "Feature",
-      "repo": "YCloudYUSA_y_lb"
-    },
-    {
-      "hash": "abb77e15e60d04e9eb1f3f47b6870d546fe0ac53",
-      "message": "feat: migrate media fields from entity_browser to media_library",
-      "date": "Dec 18, 2025",
-      "lines": 4499,
-      "type": "Feature",
-      "repo": "YCloudYUSA_y_lb"
     }
   ],
   "commitsPerYear": [
@@ -49248,7 +49248,7 @@
     },
     {
       "year": 2026,
-      "commits": 265
+      "commits": 273
     }
   ]
 }
