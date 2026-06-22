@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-15T03:27:23.927557",
+  "generated": "2026-06-22T03:27:26.363663",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -1112,11 +1112,11 @@
     },
     {
       "date": "2026-06",
-      "total": 1,
+      "total": 7,
       "features": 0,
       "bugs": 1,
-      "maintenance": 0,
-      "unknown": 0
+      "maintenance": 1,
+      "unknown": 5
     }
   ],
   "snapshots": [
@@ -45999,7 +45999,7 @@
       "date": "2026-06",
       "commit": "multi",
       "production": {
-        "loc": 96199,
+        "loc": 96193,
         "functions": 5810,
         "ccn": {
           "avg": 2.5,
@@ -47190,9 +47190,9 @@
         },
         {
           "name": "yusaopeny_ymca360",
-          "loc": 1586,
-          "ccn": 2.1,
-          "mi": 93.1,
+          "loc": 1580,
+          "ccn": 2,
+          "mi": 93.2,
           "antipatterns": 162
         },
         {
@@ -47612,6 +47612,46 @@
     }
   ],
   "commits": [
+    {
+      "hash": "8292f6a838c6f7f5b64e8594280426849df60306",
+      "message": "Harden windowed pagination with page ceiling and no-progress guard",
+      "date": "Jun 17, 2026",
+      "lines": 54,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny_ymca360"
+    },
+    {
+      "hash": "04af835eb19c8add2424ed06ed96791a5fe6a7c5",
+      "message": "Revert \"Increase Guzzle request timeout from 60s to 120s\"",
+      "date": "Jun 15, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny_ymca360"
+    },
+    {
+      "hash": "fa4750bf836c2b1cbd35cf499ac425b1e3d7e17e",
+      "message": "Increase Guzzle request timeout from 60s to 120s",
+      "date": "Jun 15, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny_ymca360"
+    },
+    {
+      "hash": "41e7bf9550696063de3127dcf2387dd881d37607",
+      "message": "Fix api_total reporting incorrect count across paginated results",
+      "date": "Jun 15, 2026",
+      "lines": 8,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny_ymca360"
+    },
+    {
+      "hash": "537f54586afecd4420275458132b6cd2a018d411",
+      "message": "Fix getSchedulesWindowed pagination: paginate by page exhaustion, not total_page",
+      "date": "Jun 15, 2026",
+      "lines": 8,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_yusaopeny_ymca360"
+    },
     {
       "hash": "6fdfb0116f0f719473c5f0cac8fe90e9d305ebe6",
       "message": "fix: prevent button gap in equal-height card rows",
@@ -49171,46 +49211,6 @@
       "lines": 2192,
       "type": "Unknown",
       "repo": "YCloudYUSA_yusaopeny-project"
-    },
-    {
-      "hash": "341f85f867349a33ab11f7e40774516704555389",
-      "message": "Add drush site:install profiling research",
-      "date": "Jan 06, 2026",
-      "lines": 250,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny-project"
-    },
-    {
-      "hash": "6a5ceb2e6cfc5bb1dbed2218061fe372907077d2",
-      "message": "fix: update drush docs link to 13.x",
-      "date": "Jan 06, 2026",
-      "lines": 2,
-      "type": "Bug",
-      "repo": "YCloudYUSA_yusaopeny_docs"
-    },
-    {
-      "hash": "da276787a5125c8eb32751cf3e9d7b8c59fd45c2",
-      "message": "docs: add Drupal 11.1+ database update command order guide",
-      "date": "Jan 06, 2026",
-      "lines": 36,
-      "type": "Maintenance",
-      "repo": "YCloudYUSA_yusaopeny_docs"
-    },
-    {
-      "hash": "bd6da94700129a28c8d97f0a3b79618db8ca64cb",
-      "message": "feat(openy_media): Add edit link extra field for media library view mode",
-      "date": "Jan 05, 2026",
-      "lines": 92,
-      "type": "Feature",
-      "repo": "open-y-subprojects_openy_features"
-    },
-    {
-      "hash": "9b43045c4276fc7d3349e2daf3e04ba7fed64837",
-      "message": "fix: Add return type to getRequiredOptions() for Symfony 7 compatibility",
-      "date": "Jan 05, 2026",
-      "lines": 2,
-      "type": "Bug",
-      "repo": "drupal_openy_repeat"
     }
   ],
   "commitsPerYear": [
@@ -49260,7 +49260,7 @@
     },
     {
       "year": 2026,
-      "commits": 294
+      "commits": 300
     }
   ]
 }
