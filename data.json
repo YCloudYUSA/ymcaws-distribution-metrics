@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-29T03:26:32.919304",
+  "generated": "2026-07-06T03:23:21.166494",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -45996,11 +45996,11 @@
       ]
     },
     {
-      "date": "2026-06",
+      "date": "2026-07",
       "commit": "multi",
       "production": {
-        "loc": 96193,
-        "functions": 5810,
+        "loc": 96219,
+        "functions": 5811,
         "ccn": {
           "avg": 2.5,
           "p95": 8
@@ -47190,9 +47190,9 @@
         },
         {
           "name": "yusaopeny_ymca360",
-          "loc": 1580,
-          "ccn": 2,
-          "mi": 93.2,
+          "loc": 1606,
+          "ccn": 2.1,
+          "mi": 93,
           "antipatterns": 162
         },
         {
