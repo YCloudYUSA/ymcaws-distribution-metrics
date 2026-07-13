@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-06T03:23:21.166494",
+  "generated": "2026-07-13T05:50:06.086405",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -1117,6 +1117,14 @@
       "bugs": 1,
       "maintenance": 2,
       "unknown": 6
+    },
+    {
+      "date": "2026-07",
+      "total": 9,
+      "features": 0,
+      "bugs": 0,
+      "maintenance": 9,
+      "unknown": 0
     }
   ],
   "snapshots": [
@@ -47613,6 +47621,54 @@
   ],
   "commits": [
     {
+      "hash": "5201fe87ad79dbc1267c7af1f4982b23cc7e5386",
+      "message": "docs: update supported Drupal version to 11.3.x",
+      "date": "Jul 06, 2026",
+      "lines": 2,
+      "type": "Maintenance",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "8470ba1b5ce8e33a1adf937a75409a9a7b50844a",
+      "message": "chore: bump version to 11.3.1.7-dev",
+      "date": "Jul 06, 2026",
+      "lines": 2,
+      "type": "Maintenance",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "4a7d241c9a20a68520092f180a1611fb880d067e",
+      "message": "chore: set distribution version 11.3.1.6",
+      "date": "Jul 06, 2026",
+      "lines": 2,
+      "type": "Maintenance",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "829eed33adb07f641ca26672c260a78db622c8d5",
+      "message": "chore: constrain drupal/core to <11.4 to avoid 11.4 errors",
+      "date": "Jul 06, 2026",
+      "lines": 4,
+      "type": "Maintenance",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "55247978f3a24e58b5c3139723f97159abf3d3fb",
+      "message": "docs: add 11.3.1.6 to important versions upgrade-path list",
+      "date": "Jul 06, 2026",
+      "lines": 2,
+      "type": "Maintenance",
+      "repo": "YCloudYUSA_yusaopeny_docs"
+    },
+    {
+      "hash": "8fc61f63e601fce2ba2169e468b849dd9532bf0d",
+      "message": "docs: add release notes for DS 11.3.1.6",
+      "date": "Jul 06, 2026",
+      "lines": 26,
+      "type": "Maintenance",
+      "repo": "YCloudYUSA_yusaopeny_docs"
+    },
+    {
       "hash": "584f0a4aae9834d0ab0b9097695fe5b475871ef4",
       "message": "fix/issue-310-incorrect-route-processing|Fix for the issue with incorrect route ",
       "date": "Jun 22, 2026",
@@ -49163,54 +49219,6 @@
       "lines": 2,
       "type": "Unknown",
       "repo": "YCloudYUSA_yusaopeny"
-    },
-    {
-      "hash": "892c76557516f4fbe1671c8d78fded3524ff3514",
-      "message": "chore: pin yusaopeny version <11.3 for point release 4.0.1",
-      "date": "Jan 07, 2026",
-      "lines": 2,
-      "type": "Maintenance",
-      "repo": "YCloudYUSA_yusaopeny-project"
-    },
-    {
-      "hash": "59696ad08b95e87e4130e536fea5f28b364a57e6",
-      "message": "feat(openy_media_image): Add hook_update_10004 for edit_link on existing sites",
-      "date": "Jan 07, 2026",
-      "lines": 25,
-      "type": "Feature",
-      "repo": "open-y-subprojects_openy_features"
-    },
-    {
-      "hash": "097438f56db92629717bf8f4725bda28c6737289",
-      "message": "fix: move footer menus to config/install for batch install compatibility",
-      "date": "Jan 07, 2026",
-      "lines": 12,
-      "type": "Bug",
-      "repo": "drupal_ws_small_y"
-    },
-    {
-      "hash": "f714ee03d940dcf2ae2657bc91615d6e4e583c78",
-      "message": "Add Drupal core patch for MenuTreeStorage performance fix",
-      "date": "Jan 06, 2026",
-      "lines": 3,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny"
-    },
-    {
-      "hash": "13c8c360d32f1074f78c060c2209bcc835398e6a",
-      "message": "Update version and description for Drupal distribution",
-      "date": "Jan 06, 2026",
-      "lines": 6,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny"
-    },
-    {
-      "hash": "507280352a479f9eda58b954ade0b69d15b69b33",
-      "message": "Batch module installation for Drupal 11.2+ performance",
-      "date": "Jan 06, 2026",
-      "lines": 138,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny"
     }
   ],
   "commitsPerYear": [
@@ -49260,7 +49268,7 @@
     },
     {
       "year": 2026,
-      "commits": 302
+      "commits": 311
     }
   ]
 }
