@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T06:03:08.826792",
+  "generated": "2026-08-03T05:54:15.547902",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -46001,7 +46001,7 @@
       ]
     },
     {
-      "date": "2026-07",
+      "date": "2026-08",
       "commit": "multi",
       "production": {
         "loc": 96219,
