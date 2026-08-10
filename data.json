@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-03T05:54:15.547902",
+  "generated": "2026-08-10T04:06:31.768809",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -1112,19 +1112,27 @@
     },
     {
       "date": "2026-06",
-      "total": 9,
+      "total": 11,
       "features": 0,
-      "bugs": 1,
+      "bugs": 3,
       "maintenance": 2,
       "unknown": 6
     },
     {
       "date": "2026-07",
-      "total": 15,
+      "total": 19,
       "features": 0,
       "bugs": 3,
       "maintenance": 12,
-      "unknown": 0
+      "unknown": 4
+    },
+    {
+      "date": "2026-08",
+      "total": 6,
+      "features": 0,
+      "bugs": 1,
+      "maintenance": 3,
+      "unknown": 2
     }
   ],
   "snapshots": [
@@ -46004,17 +46012,17 @@
       "date": "2026-08",
       "commit": "multi",
       "production": {
-        "loc": 96219,
-        "functions": 5811,
+        "loc": 96617,
+        "functions": 5833,
         "ccn": {
-          "avg": 2.5,
+          "avg": 2.6,
           "p95": 8
         },
         "mi": {
           "avg": 86.5,
           "p5": 79
         },
-        "antipatterns": 106.5
+        "antipatterns": 106.2
       },
       "testLoc": 198,
       "surfaceArea": {
@@ -46697,7 +46705,7 @@
       "antipatterns": {
         "magicKeys": 4657,
         "deepArrays": 2720,
-        "serviceLocators": 2898
+        "serviceLocators": 2909
       },
       "hotspots": [
         {
@@ -47118,10 +47126,10 @@
         },
         {
           "name": "openy_features",
-          "loc": 10544,
+          "loc": 10906,
           "ccn": 2.6,
           "mi": 92.8,
-          "antipatterns": 1201
+          "antipatterns": 1211
         },
         {
           "name": "openy_custom",
@@ -47160,10 +47168,10 @@
         },
         {
           "name": "y_lb",
-          "loc": 2225,
-          "ccn": 2.5,
+          "loc": 2261,
+          "ccn": 2.6,
           "mi": 92.9,
-          "antipatterns": 212
+          "antipatterns": 213
         },
         {
           "name": "yusaopeny_memberships",
@@ -47618,6 +47626,46 @@
   ],
   "commits": [
     {
+      "hash": "029b3a1a859c90593fe315ea06294eb3bf72be68",
+      "message": "Apply 1 suggestion(s) to 1 file(s)",
+      "date": "Aug 07, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "drupal_openy_repeat"
+    },
+    {
+      "hash": "97b60e18ae50c94276083a86c1a8af3051baad04",
+      "message": "ITCR-1271: allow openy_carnation ^4.1 so the distro can take the D11.4 fix",
+      "date": "Aug 07, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "drupal_openy_repeat"
+    },
+    {
+      "hash": "302fcb196bd5718615bd981d39f627e42b197c6c",
+      "message": "fix: alert description hidden on all header/footer alerts",
+      "date": "Aug 04, 2026",
+      "lines": 20,
+      "type": "Bug",
+      "repo": "drupal_ws_small_y"
+    },
+    {
+      "hash": "dc01a2e97fb3ebb0eb7037c5eced41d30f39aea1",
+      "message": "ITCR-1271: keep field media images fluid after blazy->image swap",
+      "date": "Jul 31, 2026",
+      "lines": 13,
+      "type": "Unknown",
+      "repo": "drupal_openy_carnation"
+    },
+    {
+      "hash": "f34d3d20758f22b2647690c3aed2d46ad9fdfd28",
+      "message": "ITCR-1271: keep menu CTA image fluid after blazy->image formatter swap",
+      "date": "Jul 30, 2026",
+      "lines": 6,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_y_lb"
+    },
+    {
       "hash": "1aba3ae3eabef09fc9bb84aaccf96e5984d2afbb",
       "message": "chore: remove inline source maps from CSS (postcss --no-map)",
       "date": "Jul 17, 2026",
@@ -47656,6 +47704,22 @@
       "lines": 10,
       "type": "Bug",
       "repo": "drupal_ws_small_y"
+    },
+    {
+      "hash": "6a61c3e40218a740cbff23c8ce1e94518d6765da",
+      "message": "ITCR-1271: add hook_update to convert menu_cta image display from blazy to core ",
+      "date": "Jul 09, 2026",
+      "lines": 66,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_y_lb"
+    },
+    {
+      "hash": "b6475d08b56b6b59bb38b906e64884dccb16cc3f",
+      "message": "ITCR-1271: add hook_update_N to convert existing sites' image displays from blaz",
+      "date": "Jul 09, 2026",
+      "lines": 662,
+      "type": "Unknown",
+      "repo": "open-y-subprojects_openy_features"
     },
     {
       "hash": "5201fe87ad79dbc1267c7af1f4982b23cc7e5386",
@@ -47704,6 +47768,22 @@
       "lines": 26,
       "type": "Maintenance",
       "repo": "YCloudYUSA_yusaopeny_docs"
+    },
+    {
+      "hash": "687dddebf0b4bbc43898f2fe926815cc6117a552",
+      "message": "fix(ITCR-1271): switch blazy image formatter to core image (D11.4)",
+      "date": "Jun 23, 2026",
+      "lines": 4,
+      "type": "Bug",
+      "repo": "YCloudYUSA_y_lb"
+    },
+    {
+      "hash": "0d2a8ee500b1156eb1faf5d532175ea6d29c7240",
+      "message": "fix(ITCR-1271): switch blazy image formatter to core image (D11.4)",
+      "date": "Jun 23, 2026",
+      "lines": 48,
+      "type": "Bug",
+      "repo": "open-y-subprojects_openy_features"
     },
     {
       "hash": "584f0a4aae9834d0ab0b9097695fe5b475871ef4",
@@ -49144,78 +49224,6 @@
       "lines": 2,
       "type": "Unknown",
       "repo": "YCloudYUSA_yusaopeny"
-    },
-    {
-      "hash": "9de7d8c885a177f160c4e036e80c4abc7b4b1ee8",
-      "message": "Add check if the module is enabled",
-      "date": "Jan 14, 2026",
-      "lines": 5,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny"
-    },
-    {
-      "hash": "48b463eadd0b1c160c5934833af1ae3340355bb7",
-      "message": "Enable module trash",
-      "date": "Jan 14, 2026",
-      "lines": 11,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny"
-    },
-    {
-      "hash": "fca0bd5f1aefaafde8031ddc377b8b63f7f0e114",
-      "message": "Add screenshots for documentation",
-      "date": "Jan 14, 2026",
-      "lines": 23,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny_docs"
-    },
-    {
-      "hash": "997962c67b985893e33d932a3164f5c4576b0f66",
-      "message": "Reorganize trash documentation to support images",
-      "date": "Jan 14, 2026",
-      "lines": 17,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny_docs"
-    },
-    {
-      "hash": "0474f6ad982700761e3a00d84642a05829afd6d0",
-      "message": "Enable Trash module in YUSAOpenY profile",
-      "date": "Jan 13, 2026",
-      "lines": 1,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny"
-    },
-    {
-      "hash": "ab85bc60de7866052529f29a954ac4630eb4051f",
-      "message": "Add Trash module (drupal/trash:^3.0)",
-      "date": "Jan 13, 2026",
-      "lines": 1,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny"
-    },
-    {
-      "hash": "3bb4e14f2be012a5320fa81b41ee9875ffff4b40",
-      "message": "Add Trash module user documentation",
-      "date": "Jan 13, 2026",
-      "lines": 195,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny_docs"
-    },
-    {
-      "hash": "5daa62a12d81847de8873e94921d063d1e11eb91",
-      "message": "Add patch for Drupal #3492438 route rebuild optimization",
-      "date": "Jan 09, 2026",
-      "lines": 3,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny"
-    },
-    {
-      "hash": "6feeb363b90617dd6c48a201736a0332eb06da13",
-      "message": "Update beta project version in README",
-      "date": "Jan 09, 2026",
-      "lines": 2,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny-project"
     }
   ],
   "commitsPerYear": [
@@ -49265,7 +49273,7 @@
     },
     {
       "year": 2026,
-      "commits": 317
+      "commits": 329
     }
   ]
 }
