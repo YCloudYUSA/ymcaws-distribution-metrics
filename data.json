@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24T03:12:08.433094",
+  "generated": "2026-08-31T08:24:04.533330",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -1128,11 +1128,11 @@
     },
     {
       "date": "2026-08",
-      "total": 12,
-      "features": 0,
-      "bugs": 1,
-      "maintenance": 4,
-      "unknown": 7
+      "total": 19,
+      "features": 1,
+      "bugs": 3,
+      "maintenance": 7,
+      "unknown": 8
     }
   ],
   "snapshots": [
@@ -47626,6 +47626,46 @@
   ],
   "commits": [
     {
+      "hash": "745c7e7d418d067e7136783a20d3244463258c48",
+      "message": "fix: widen y360id from int to string, sync no longer aborts",
+      "date": "Aug 31, 2026",
+      "lines": 57,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny_ymca360"
+    },
+    {
+      "hash": "96f9086c7f2612d4b90467c12f583dde5aebe874",
+      "message": "Apply suggestion from @svicervlad",
+      "date": "Aug 27, 2026",
+      "lines": 3,
+      "type": "Unknown",
+      "repo": "open-y-subprojects_openy_custom"
+    },
+    {
+      "hash": "6de740a896e1d409e3bb4abae4f17f408e0a348d",
+      "message": "refactor(openy_system): load shared Vue 3 from cdnjs, not vendored",
+      "date": "Aug 27, 2026",
+      "lines": 49,
+      "type": "Maintenance",
+      "repo": "open-y-subprojects_openy_custom"
+    },
+    {
+      "hash": "35ae6b6809692d94f3c9b12082d1b58f9d932fd8",
+      "message": "feat(openy_system): add shared Vue 3 library (ITCR-1273 / ITCR-1301)",
+      "date": "Aug 27, 2026",
+      "lines": 49,
+      "type": "Feature",
+      "repo": "open-y-subprojects_openy_custom"
+    },
+    {
+      "hash": "9bc706758c44fbee51e81138a2e76a54135da5a9",
+      "message": "Fix: Render field_block_item from block_content entity in accordion template",
+      "date": "Aug 27, 2026",
+      "lines": 10,
+      "type": "Bug",
+      "repo": "drupal_lb_accordion"
+    },
+    {
       "hash": "700d6ed8be27922ece43408117c01e30a6d44a5a",
       "message": "Update version to 11.4.0.1-dev in openy.info.yml",
       "date": "Aug 11, 2026",
@@ -49184,46 +49224,6 @@
       "lines": 6,
       "type": "Feature",
       "repo": "YCloudYUSA_yusaopeny_docs"
-    },
-    {
-      "hash": "af806babd9ed446733b2d5568a5a5a39ded1b02f",
-      "message": "feat(config): enable Mermaid diagrams rendering",
-      "date": "Jan 29, 2026",
-      "lines": 6,
-      "type": "Feature",
-      "repo": "YCloudYUSA_yusaopeny_docs"
-    },
-    {
-      "hash": "76d3a4b8fc5e7d86164b34f05c9eefb3245605c7",
-      "message": "Add calculateDependencies() to post_update hook",
-      "date": "Jan 23, 2026",
-      "lines": 2,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny_gated_content"
-    },
-    {
-      "hash": "0ecd721ffc93a9227ab7486d846b165bbb7438fd",
-      "message": "fix: Migrate all entity_browser image/video fields to media_library",
-      "date": "Jan 23, 2026",
-      "lines": 515,
-      "type": "Bug",
-      "repo": "YCloudYUSA_yusaopeny_gated_content"
-    },
-    {
-      "hash": "0996ca11de3a1538e5a83cff388e883996e3ea28",
-      "message": "fix: Migrate gc_video media field from entity_browser to media_library",
-      "date": "Jan 22, 2026",
-      "lines": 60,
-      "type": "Bug",
-      "repo": "YCloudYUSA_yusaopeny_gated_content"
-    },
-    {
-      "hash": "b835c593fdf8beb4105c2e0b47c354c0efbed682",
-      "message": "Fix mermaid erDiagram syntax for Hugo compatibility",
-      "date": "Jan 22, 2026",
-      "lines": 68,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_openy_traction_rec"
     }
   ],
   "commitsPerYear": [
@@ -49273,7 +49273,7 @@
     },
     {
       "year": 2026,
-      "commits": 342
+      "commits": 349
     }
   ]
 }
