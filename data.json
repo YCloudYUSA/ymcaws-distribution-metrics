@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-07T07:12:51.828247",
+  "generated": "2026-09-14T07:45:51.073576",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -1136,11 +1136,11 @@
     },
     {
       "date": "2026-09",
-      "total": 15,
+      "total": 19,
       "features": 0,
-      "bugs": 1,
-      "maintenance": 13,
-      "unknown": 1
+      "bugs": 2,
+      "maintenance": 15,
+      "unknown": 2
     }
   ],
   "snapshots": [
@@ -46020,7 +46020,7 @@
       "date": "2026-09",
       "commit": "multi",
       "production": {
-        "loc": 97342,
+        "loc": 97350,
         "functions": 5910,
         "ccn": {
           "avg": 2.6,
@@ -46030,7 +46030,7 @@
           "avg": 86.5,
           "p5": 79
         },
-        "antipatterns": 105.6
+        "antipatterns": 105.5
       },
       "testLoc": 198,
       "surfaceArea": {
@@ -47265,7 +47265,7 @@
         },
         {
           "name": "openy_map",
-          "loc": 1044,
+          "loc": 1052,
           "ccn": 2.8,
           "mi": 80.7,
           "antipatterns": 214
@@ -47645,6 +47645,22 @@
     }
   ],
   "commits": [
+    {
+      "hash": "81d191171c049aab7399247a5f68c834bba73722",
+      "message": "fix: apply drupal.org patch for commerce_cart_api Drupal 11.4 compatibility",
+      "date": "Sep 09, 2026",
+      "lines": 3,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny_memberships"
+    },
+    {
+      "hash": "b4481854256debc354c93221dd4963c7d1a77690",
+      "message": "Honor geolocation region/language settings for the Google Maps API script",
+      "date": "Sep 09, 2026",
+      "lines": 16,
+      "type": "Unknown",
+      "repo": "open-y-subprojects_openy_map"
+    },
     {
       "hash": "ec946f2815e70f7e2c076ea8fbf2fa4fa14d374d",
       "message": "chore: bump version to 11.4.0.2-dev in openy.info.yml",
@@ -49228,22 +49244,6 @@
       "lines": 34,
       "type": "Bug",
       "repo": "open-y-subprojects_openy_features"
-    },
-    {
-      "hash": "1cbe1a3ec3637ad4577ac2f786f237888dbd45b4",
-      "message": "fix(ITCR-1087): Fix Layout Builder WSOD when editing Branch/Facility nodes",
-      "date": "Mar 03, 2026",
-      "lines": 91,
-      "type": "Bug",
-      "repo": "drupal_ws_small_y"
-    },
-    {
-      "hash": "69fa769f644223d1e271ba9f88ebd9d43cc7f5ca",
-      "message": "fix: remove breadcrumb block max-age=0 that breaks Dynamic Page Cache",
-      "date": "Feb 27, 2026",
-      "lines": 8,
-      "type": "Bug",
-      "repo": "YCloudYUSA_yusaopeny"
     }
   ],
   "commitsPerYear": [
@@ -49293,7 +49293,7 @@
     },
     {
       "year": 2026,
-      "commits": 406
+      "commits": 410
     }
   ]
 }
