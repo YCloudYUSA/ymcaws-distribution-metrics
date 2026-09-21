@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-14T07:45:51.073576",
+  "generated": "2026-09-21T07:52:28.706978",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -1136,11 +1136,11 @@
     },
     {
       "date": "2026-09",
-      "total": 19,
+      "total": 25,
       "features": 0,
-      "bugs": 2,
-      "maintenance": 15,
-      "unknown": 2
+      "bugs": 5,
+      "maintenance": 17,
+      "unknown": 3
     }
   ],
   "snapshots": [
@@ -46020,14 +46020,14 @@
       "date": "2026-09",
       "commit": "multi",
       "production": {
-        "loc": 97350,
-        "functions": 5910,
+        "loc": 97380,
+        "functions": 5912,
         "ccn": {
           "avg": 2.6,
           "p95": 8
         },
         "mi": {
-          "avg": 86.5,
+          "avg": 86.6,
           "p5": 79
         },
         "antipatterns": 105.5
@@ -46725,7 +46725,7 @@
       "antipatterns": {
         "magicKeys": 4663,
         "deepArrays": 2727,
-        "serviceLocators": 2914
+        "serviceLocators": 2916
       },
       "hotspots": [
         {
@@ -47278,6 +47278,13 @@
           "antipatterns": 40
         },
         {
+          "name": "openy_node_alert",
+          "loc": 746,
+          "ccn": 3.2,
+          "mi": 88.4,
+          "antipatterns": 52
+        },
+        {
           "name": "openy_lily",
           "loc": 746,
           "ccn": 4.7,
@@ -47290,13 +47297,6 @@
           "ccn": 5.5,
           "mi": 60.8,
           "antipatterns": 63
-        },
-        {
-          "name": "openy_node_alert",
-          "loc": 731,
-          "ccn": 3.2,
-          "mi": 88.2,
-          "antipatterns": 50
         },
         {
           "name": "openy_mappings",
@@ -47440,9 +47440,9 @@
         },
         {
           "name": "lb_accordion",
-          "loc": 217,
-          "ccn": 3,
-          "mi": 91.4,
+          "loc": 225,
+          "ccn": 3.1,
+          "mi": 91.7,
           "antipatterns": 29
         },
         {
@@ -47601,7 +47601,7 @@
         },
         {
           "name": "lb_table",
-          "loc": 47,
+          "loc": 54,
           "ccn": 2,
           "mi": 100,
           "antipatterns": 4
@@ -47646,6 +47646,30 @@
   ],
   "commits": [
     {
+      "hash": "3b6a2c4db21f07c6ce4dad8bfbeb854e055416ee",
+      "message": "fix(ITCP-741): self-host jQuery Migrate, drop code.jquery.com CDN",
+      "date": "Sep 16, 2026",
+      "lines": 30,
+      "type": "Bug",
+      "repo": "YCloudYUSA_yusaopeny"
+    },
+    {
+      "hash": "d0c6ee414f84a6cbcbb5a8e47474385ab25e9157",
+      "message": "Fix: run text format filters (media_embed) on accordion item body",
+      "date": "Sep 14, 2026",
+      "lines": 22,
+      "type": "Bug",
+      "repo": "drupal_lb_accordion"
+    },
+    {
+      "hash": "41c24abe438e7d564a03ffdb77b26cedd0d0755b",
+      "message": "fix(ITCP-730): do not load alert widget on backend routes",
+      "date": "Sep 10, 2026",
+      "lines": 36,
+      "type": "Bug",
+      "repo": "open-y-subprojects_openy_node_alert"
+    },
+    {
       "hash": "81d191171c049aab7399247a5f68c834bba73722",
       "message": "fix: apply drupal.org patch for commerce_cart_api Drupal 11.4 compatibility",
       "date": "Sep 09, 2026",
@@ -47660,6 +47684,14 @@
       "lines": 16,
       "type": "Unknown",
       "repo": "open-y-subprojects_openy_map"
+    },
+    {
+      "hash": "13cae9b744b5b78f6426862e9a98128410784b22",
+      "message": "Guard tablesaw enhancement: only add markup to tables with header cells",
+      "date": "Sep 09, 2026",
+      "lines": 24,
+      "type": "Unknown",
+      "repo": "drupal_lb_table"
     },
     {
       "hash": "ec946f2815e70f7e2c076ea8fbf2fa4fa14d374d",
@@ -49212,38 +49244,6 @@
       "lines": 2,
       "type": "Unknown",
       "repo": "YCloudYUSA_yusaopeny"
-    },
-    {
-      "hash": "ef00ff3485e363c153ff82176f4866dbfe5f96ac",
-      "message": "Update ycloudyusa/yusaopeny version constraint for dev",
-      "date": "Mar 03, 2026",
-      "lines": 2,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny-project"
-    },
-    {
-      "hash": "5ad0256791a261f3d9050a5f75963a49e5545152",
-      "message": "Update ycloudyusa/yusaopeny version constraint",
-      "date": "Mar 03, 2026",
-      "lines": 2,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny-project"
-    },
-    {
-      "hash": "7114d351cb004e08b753834928053fda37b7a529",
-      "message": "Revert \"fix(ITCR-1136): keep openy_prgf_group_schedules enabled, remove deprecat",
-      "date": "Mar 03, 2026",
-      "lines": 34,
-      "type": "Unknown",
-      "repo": "open-y-subprojects_openy_features"
-    },
-    {
-      "hash": "7f759352651ec02b75b3dcfaf0885dfb5e2a6876",
-      "message": "fix(ITCR-1136): keep openy_prgf_group_schedules enabled, remove deprecated deps",
-      "date": "Mar 03, 2026",
-      "lines": 34,
-      "type": "Bug",
-      "repo": "open-y-subprojects_openy_features"
     }
   ],
   "commitsPerYear": [
@@ -49293,7 +49293,7 @@
     },
     {
       "year": 2026,
-      "commits": 410
+      "commits": 416
     }
   ]
 }
