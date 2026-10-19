@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T08:52:47.317964",
+  "generated": "2026-10-19T07:30:27.238558",
   "distribution": "YMCA Website Services",
   "repos_analyzed": [
     "YCloudYUSA_yusaopeny",
@@ -1144,11 +1144,11 @@
     },
     {
       "date": "2026-10",
-      "total": 167,
+      "total": 181,
       "features": 0,
       "bugs": 7,
-      "maintenance": 41,
-      "unknown": 119
+      "maintenance": 44,
+      "unknown": 130
     }
   ],
   "snapshots": [
@@ -46028,7 +46028,7 @@
       "date": "2026-10",
       "commit": "multi",
       "production": {
-        "loc": 97467,
+        "loc": 97469,
         "functions": 5914,
         "ccn": {
           "avg": 2.6,
@@ -46127,6 +46127,8 @@
           "#all",
           "#branches",
           "#camps",
+          "#text",
+          "#format",
           "#links",
           "#url",
           "#sitemap_link",
@@ -46175,8 +46177,6 @@
           "#amenities_open",
           "#amenities_closed",
           "#date_time_element",
-          "#text",
-          "#format",
           "#image",
           "#form",
           "#machine_name",
@@ -46733,7 +46733,7 @@
         ]
       },
       "antipatterns": {
-        "magicKeys": 4672,
+        "magicKeys": 4673,
         "deepArrays": 2727,
         "serviceLocators": 2926
       },
@@ -47143,6 +47143,62 @@
   ],
   "commits": [
     {
+      "hash": "29ea8acaf949f31d3333de411876ae96d7672ad5",
+      "message": "composer.json: admit Drupal 12 in drupal/core constraint",
+      "date": "Oct 15, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "YCloudYUSA_lb_claro"
+    },
+    {
+      "hash": "80097a20602eef7cd826aae188f2d71f7e77f2c6",
+      "message": "composer.json: allow ckeditor5_plugin_pack 2.0 beta for Drupal 12",
+      "date": "Oct 15, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "open-y-subprojects_openy_features"
+    },
+    {
+      "hash": "30164e290fde103f6e6a02f2719986223a196eca",
+      "message": "composer.json: admit Drupal 12 in drupal/core constraint",
+      "date": "Oct 15, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "open-y-subprojects_openy_features"
+    },
+    {
+      "hash": "d1ee1ab70321d8bcd73f46279e23ced367710572",
+      "message": "Declare Drupal core constraint ^10 || ^11 || ^12",
+      "date": "Oct 15, 2026",
+      "lines": 1,
+      "type": "Unknown",
+      "repo": "open-y-subprojects_common_scss"
+    },
+    {
+      "hash": "c2e58835658a30e4405f3738fd60a66837788314",
+      "message": "composer.json: admit Drupal 12 in drupal/core constraint",
+      "date": "Oct 15, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "drupal_openy_socrates"
+    },
+    {
+      "hash": "d481458cbd5b1b6b1c99a26962018158f7266188",
+      "message": "Admit Drupal 12 and Symfony 8 in composer.json",
+      "date": "Oct 15, 2026",
+      "lines": 3,
+      "type": "Unknown",
+      "repo": "drupal_program_search"
+    },
+    {
+      "hash": "469789b2bc90c0619db9b8745072362153b58fd3",
+      "message": "Require responsive_favicons ^4.1 (first line admitting Drupal 12)",
+      "date": "Oct 15, 2026",
+      "lines": 2,
+      "type": "Unknown",
+      "repo": "drupal_ws_colorway_canada"
+    },
+    {
       "hash": "2f66f77b7818178f08c466e81184659a9ecfdf63",
       "message": "Keep getDefaultOperations() compatible with Drupal 10/11: make $cacheability opt",
       "date": "Oct 09, 2026",
@@ -47221,6 +47277,38 @@
       "lines": 42,
       "type": "Unknown",
       "repo": "YCloudYUSA_yusaopeny_gated_content"
+    },
+    {
+      "hash": "7073712e4ffce61b1d7a969f258b63c58d3d3602",
+      "message": "Move hook_views_data_alter() from openy_taxonomy.views.inc to .module",
+      "date": "Oct 08, 2026",
+      "lines": 66,
+      "type": "Unknown",
+      "repo": "open-y-subprojects_openy_features"
+    },
+    {
+      "hash": "12f97282b48138a96e7865422f157de3171eac11",
+      "message": "Type-hint EntityTypeManagerInterface in ClassLocation block",
+      "date": "Oct 08, 2026",
+      "lines": 8,
+      "type": "Unknown",
+      "repo": "open-y-subprojects_openy_features"
+    },
+    {
+      "hash": "3d1cea3eca007a249a68eb86a35fa04f42ae6444",
+      "message": "Use processed_text render element instead of check_markup() in BranchAmenitiesFo",
+      "date": "Oct 08, 2026",
+      "lines": 5,
+      "type": "Unknown",
+      "repo": "open-y-subprojects_openy_features"
+    },
+    {
+      "hash": "3e1b189a7a39586fd892ce58206ac02cfe24482c",
+      "message": "Replace core/jquery.cookie dependency with document.cookie in openy_prgf_classes",
+      "date": "Oct 08, 2026",
+      "lines": 4,
+      "type": "Unknown",
+      "repo": "open-y-subprojects_openy_features"
     },
     {
       "hash": "28fa07cbdef183c0b61ea635056febaa5d397074",
@@ -48653,94 +48741,6 @@
       "lines": 2,
       "type": "Unknown",
       "repo": "YCloudYUSA_yusaopeny"
-    },
-    {
-      "hash": "f0f56d5bf04a04005070b0862b36a1ce13849b76",
-      "message": "Update version to 11.4.0.0-rc1",
-      "date": "Aug 11, 2026",
-      "lines": 2,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny"
-    },
-    {
-      "hash": "8f9e254bdf63935f10db37daf5408789b193deeb",
-      "message": "ITCR-1271: set core_version_requirement to ^11.3 || ^11.4",
-      "date": "Aug 11, 2026",
-      "lines": 2,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny"
-    },
-    {
-      "hash": "9e936c7ae199961fced03941417bdbe2ad722a32",
-      "message": "ITCR-1271: bump distro version to 11.4.0.0-dev for the D11.4 line",
-      "date": "Aug 11, 2026",
-      "lines": 2,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny"
-    },
-    {
-      "hash": "6288f8c94baedc1edae19e8f7fdcb5c67e1f4a2c",
-      "message": "ITCR-1271: require released D11.4 fixes, drop the test-bridge patches",
-      "date": "Aug 07, 2026",
-      "lines": 25,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny"
-    },
-    {
-      "hash": "029b3a1a859c90593fe315ea06294eb3bf72be68",
-      "message": "Apply 1 suggestion(s) to 1 file(s)",
-      "date": "Aug 07, 2026",
-      "lines": 2,
-      "type": "Unknown",
-      "repo": "drupal_openy_repeat"
-    },
-    {
-      "hash": "97b60e18ae50c94276083a86c1a8af3051baad04",
-      "message": "ITCR-1271: allow openy_carnation ^4.1 so the distro can take the D11.4 fix",
-      "date": "Aug 07, 2026",
-      "lines": 2,
-      "type": "Unknown",
-      "repo": "drupal_openy_repeat"
-    },
-    {
-      "hash": "302fcb196bd5718615bd981d39f627e42b197c6c",
-      "message": "fix: alert description hidden on all header/footer alerts",
-      "date": "Aug 04, 2026",
-      "lines": 20,
-      "type": "Bug",
-      "repo": "drupal_ws_small_y"
-    },
-    {
-      "hash": "d77fa30853e40205aeb20151f2e14d85ab40ba66",
-      "message": "ITCR-1271: add openy_carnation MR !125 patch (menu/field media image fluidity)",
-      "date": "Jul 31, 2026",
-      "lines": 3,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_yusaopeny"
-    },
-    {
-      "hash": "dc01a2e97fb3ebb0eb7037c5eced41d30f39aea1",
-      "message": "ITCR-1271: keep field media images fluid after blazy->image swap",
-      "date": "Jul 31, 2026",
-      "lines": 13,
-      "type": "Unknown",
-      "repo": "drupal_openy_carnation"
-    },
-    {
-      "hash": "f34d3d20758f22b2647690c3aed2d46ad9fdfd28",
-      "message": "ITCR-1271: keep menu CTA image fluid after blazy->image formatter swap",
-      "date": "Jul 30, 2026",
-      "lines": 6,
-      "type": "Unknown",
-      "repo": "YCloudYUSA_y_lb"
-    },
-    {
-      "hash": "1aba3ae3eabef09fc9bb84aaccf96e5984d2afbb",
-      "message": "chore: remove inline source maps from CSS (postcss --no-map)",
-      "date": "Jul 17, 2026",
-      "lines": 135,
-      "type": "Maintenance",
-      "repo": "drupal_ws_small_y"
     }
   ],
   "commitsPerYear": [
@@ -48790,7 +48790,7 @@
     },
     {
       "year": 2026,
-      "commits": 583
+      "commits": 597
     }
   ]
 }
